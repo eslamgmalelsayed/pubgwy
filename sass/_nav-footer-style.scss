@@ -1,0 +1,245 @@
+// top-bar
+.top-bar{
+    border-bottom: 1px solid $border-color;
+    .container{
+        a{
+            color: $links-color;
+            font-family: cairo bo;
+            text-decoration: none;
+            padding: 0 .6rem;
+            border-left: 1px solid $border-color;
+            font-size: 12px;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+        .last-link{
+            color: $second-color;
+            border-left: none;
+        }
+    }
+}
+// main-nav
+.main-nav{
+    border-bottom: 1px solid $border-color;
+    background: #fff;
+    .container{
+        .navbar-toggler{
+            background: $main-color;
+        } 
+        form{
+            .input-group{
+                input{
+                    border-radius: $border-radius;
+                    &:focus{
+                        border: $border-color 1px solid;
+                        box-shadow: none;
+                    }  
+                }
+                .input-group-btn{
+                    margin-right: -2.5rem !important;
+                    z-index: 99;
+                    box-shadow: none;
+                    .btn{
+                        color: #999;
+                        &:focus{
+                            border: none;
+                            box-shadow: none;
+                        }
+                    }
+                }
+            }
+        }
+        ul{
+            li{
+                padding-right: .3rem;
+                background: #fff;
+            }
+            .sell-link,.login-link{
+                padding: .3rem 1.5rem;
+                margin: 0 .2rem;
+                border-radius: $border-radius;
+                color: #fff !important;
+                font-size: 13px;
+            }
+            .sell-link{
+                background: $second-color;
+            }
+            .login-link{
+                background: $main-color;
+            }
+            i{
+                color: $main-color;
+                font-size: 1.5rem;
+                position: relative;
+            }
+            .order-count{
+                &::before{
+                    content: "0";
+                    position: absolute;
+                    width: 10px;
+                    height: 10px;
+                    line-height: 1.4rem;
+                    top: 0;
+                    margin-left: 1.5rem;
+                    margin-right: .9rem;
+                    color: #fd7e14;
+                    font-weight: bold;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+// pages-bar
+.pages-bar{   
+    background: #fff;
+    height: 5vh;
+    ul{
+        box-shadow: 0px 26px 82px 3px rgba(255,255,255,0.59);
+        li{
+            padding-top: .1rem;
+            &:hover{
+                border-bottom: 3px solid $main-color;
+                background: #F8F9FA;
+            }
+            a{
+                color: $links-color;
+                font-family: cairo bo;
+                font-size: 12px;
+                text-decoration: none;
+                padding: .4rem 1.5rem !important;
+                border-left: 1px solid $border-color;
+                &:hover,&:focus{
+                    color: $main-color;
+                }
+            } 
+        }      
+    }
+    .dropdown-menu{
+        padding: 0;
+        border: 1px solid $main-color;
+        border-top: 3px solid $main-color;
+        border-radius: 0;
+        margin-top: 0 !important;
+        box-shadow: 0px 0px 5px 3px rgba(255,255,255,0.30);
+        z-index: 999;
+        li{
+            padding-top: 0 !important;
+            border-bottom: 1px solid $border-color;
+            &:hover{
+                border-bottom: none !important;
+        }
+    }
+    }
+    .dropdown-toggle::after{
+        display: none;
+    }
+    
+    .dropdown:hover .dropdown-menu{
+        display: block !important;
+    }
+}
+
+
+.mobile-nav-links{
+    a{
+        border-bottom: 1px solid #0000001a ;
+        color: $links-color !important;
+            font-weight: bold;
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }
+    }
+    .sell-linky{
+        color: $second-color !important;
+    }
+    .login-linky{
+        color: $main-color !important;
+    }
+     
+}
+// footer
+footer{
+    // adv
+    .adv{
+        border-bottom: 1px solid rgb(199, 199, 199);
+        h6{
+            color: $main-color;
+            font-family: cairo bo;
+            font-size: 19.2px;
+        }
+        p{
+            font-size: 14.4px;
+            font-family: cairo li;
+        }
+        i{
+            font-size: 3.5rem;
+            color: $main-color;
+        }
+        .circle{
+            border: 2px dashed $main-color;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            padding-top: .8rem;
+            margin: auto;
+        }
+    }
+    // info
+    .info{
+        h5{
+            color: $links-color;
+            font-family: cairo bo;
+            font-size: 18px;
+        }
+        li{
+            a{
+                color: $links-color;
+                text-decoration: none;
+                &:hover{
+                    text-decoration: underline;
+                    color: $main-color;
+                }
+            }
+            &::marker{
+                color: $links-color;
+            }
+        }
+    }
+    .contact-part{
+        i{
+            color: $main-color;
+            font-size: 1.3rem;
+        }
+        .follow-us{
+            .circle{
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                margin: auto;
+                padding: .2rem;
+                transition: .3s;
+                &:hover{
+                    background: $main-color !important;
+                }
+            }
+            i{
+                font-size: 1.2rem;
+                transition: .3s;
+                color: #fff;
+                
+            }
+        }
+    }
+    .banks-logos{
+        p{
+            color: $links-color;
+        }
+    }
+}

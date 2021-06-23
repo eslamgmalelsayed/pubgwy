@@ -1,0 +1,38 @@
+//general
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: cairo norm;
+}
+//scroll
+html{scroll-behavior: smooth;}
+
+//fonts
+//bold black
+@font-face {
+    font-family: cairo bo;
+    src: url(../fonts/Cairo-Black.ttf);
+}
+//light
+@font-face {
+    font-family: cairo li;
+    src: url(../fonts/Cairo-Light.ttf);
+}
+//normal
+@font-face {
+    font-family: cairo norm;
+    src: url(../fonts/Cairo-Regular.ttf);
+}
+
+//colors
+$main-color: #01A4EA;
+$second-color: #28A745;
+$font-color: #dc3545;
+$font-hover: #a71d2a ;
+$border-color: #0000001a;
+$links-color: #6c757d;
+$section-color: #F3F3F3;
+// radius
+$border-radius: 5px;

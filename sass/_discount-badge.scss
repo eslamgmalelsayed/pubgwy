@@ -1,0 +1,46 @@
+.discount-badge{
+  position: absolute;
+  top: -6px;
+  right: 8px;
+  color: #fff;
+  font-weight: bold;
+  span {
+      position: relative;
+      display: block;
+      text-align: center;
+      background: #F8463F;
+      font-size: 14px;
+      line-height: 1;
+      padding: 8px 8px 8px;
+      border-top-right-radius: 8px;
+      width: 45px;
+    }
+}
+.discount-badge:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 45px solid transparent;
+    border-top: 10px solid #F8463F;
+  }
+  .discount-badge span:before, .discount-badge span:after {
+    position: absolute;
+    content: "";
+  }
+  .discount-badge span:before {
+   height: 6px;
+   width: 6px;
+   left: -6px;
+   top: 0;
+   background: #F8463F;
+  }
+  .discount-badge span:after {
+   height: 6px;
+   width: 8px;
+   left: -8px;
+   top: 0;
+   border-radius: 8px 8px 0 0;
+   background: #C02031;
+  }

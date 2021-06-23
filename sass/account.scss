@@ -1,0 +1,48 @@
+// import styles
+@import 'base';
+@import 'hamburger';
+@import 'nav-footer-style';
+// header
+header{
+    img{
+        object-fit: cover;
+        object-position: center;
+    }
+}
+//  account
+.account{
+    background: $section-color;
+    .personal-part{
+        background: #fff;
+        border-radius: $border-radius;
+        img{
+            width: 100px;
+        }
+        h5{
+            i{
+                width: 25px;
+                height: 25px;
+                color: rgb(40, 167, 69);
+                border: 2px solid rgb(40, 167, 69);
+                padding: 1px;
+                border-radius: 50%;
+            }
+        }
+        p{
+            font-size: 12.8px;
+            color: rgb(40, 167, 69);
+        }
+        .multicolored{
+            width: 100px;
+            height: 2px;
+            background: linear-gradient(110deg,red,rgb(253, 253, 64) 60%,rgb(138, 223, 138) 20%);
+        }
+        .contact-me{
+            i{
+                font-size: 35px;
+                color: $main-color;
+            }
+        }
+        
+    }
+}

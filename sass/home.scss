@@ -1,0 +1,279 @@
+// import styles
+@import 'base';
+@import 'hamburger';
+@import 'discount-badge';
+@import 'nav-footer-style';
+// games-rounded-carousel
+.games-rounded-carousel{
+    background: $section-color;
+    overflow: hidden;
+    img{
+        border: 2px solid $main-color;
+        object-position: center;
+        object-fit: contain;
+        transition: .3s;
+        &:hover{
+            filter: saturate(250%);
+        }
+    }
+}
+// header-gallery
+.header-gallery{
+    background: $section-color;
+    .sub-link{
+        color: $main-color;
+        font-family: cairo bo;
+        text-decoration: none;
+        transition: .3s;
+        width: fit-content;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    // header-banner
+    .header-banner{
+        img{
+            object-fit: contain;
+            object-position: center;
+        }
+        .carousel-indicators [data-bs-target]{
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+        }
+        .carousel-indicators .active{
+            background-color: $main-color !important;
+        }
+    }
+    // cards-wrapper
+    .cards-wrapper{
+        .card{
+            position: relative;
+            .card-body{
+                .card-title{
+                   color: #000;
+                   font-family: cairo bo;
+                   display: block;
+                   text-decoration: none;
+                   text-overflow: ellipsis;
+                   white-space: nowrap; 
+                   overflow: hidden; 
+                   &:hover{
+                       text-decoration: underline;
+                       color: $main-color;
+                   }
+                }
+                .card-desc{
+                    color: $font-color;
+                    font-family: cairo bo;
+                    display: block;
+                    text-decoration: none;
+                    cursor: pointer;
+                   &:hover{
+                    text-decoration: underline;
+                    color: $font-hover;
+                }
+                }
+                .card-price{
+                    color: $font-color;
+                    text-decoration: line-through;
+                }
+                .card-discount{
+                    color: $links-color;
+                }
+                .buy-link{
+                    width: fit-content;
+                    border-radius: $border-radius;
+                    background: $main-color;
+                    padding: .1rem .3rem;
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    // upcoming
+    .upcoming{
+        img{
+            object-fit: contain;
+            object-position: center;
+        }
+    }
+    // offers
+    .offers{
+        h1,p{
+            color: $links-color;
+        }
+        .card{
+            position: relative;
+            .timer{
+                position: absolute;
+                top: 50%;
+                right: 2%;
+                color: #fff;
+                border-radius: $border-radius;
+                border: 1px solid $font-color;
+                padding: .2rem;
+                transform: skew(-15deg);
+                font-style: italic;
+                .timer-content{
+                    background: $font-color;
+                }
+            }
+            img{
+                object-fit: contain;
+                object-position: center;
+                max-height: 150px;
+                min-height: 150px;
+            }
+            .quantity{
+                width: fit-content;
+                background: $main-color;
+                border-radius: $border-radius;
+                margin: .3rem;
+                padding: 0 .3rem;
+                color: #fff;
+            }
+            .card-title{
+                color: #000;
+                font-family: cairo bo;
+                display: block;
+                text-decoration: none;
+                &:hover{
+                    text-decoration: underline;
+                    color: $main-color;
+                }
+             }
+             .card-desc{
+                color: $font-color;
+                text-decoration: none;
+                text-overflow: ellipsis;
+                white-space: nowrap; 
+                overflow: hidden; 
+             }
+             .card-price{
+                 color: $links-color;
+             }
+             .card-discount{
+                 color: $links-color;
+             }
+             .buy-link{
+                 width: fit-content;
+                 border-radius: $border-radius;
+                 background: $main-color;
+                 color: #fff;
+                 text-decoration: none;
+                 padding: .3rem .7rem;
+                 i{
+                     font-size: 1.5rem;
+                 }
+             }
+        }
+    }
+    // all-offers
+    .all-offers{
+        img{
+            object-fit: contain;
+            object-position: center;
+        }
+    }
+    // opportunities
+    .opportunities{
+        text-align: start !important;
+        h1,p{
+            color: $links-color;
+        }
+    }
+    // blog
+    .blog{
+            .card{
+                position: relative;
+                color: #fff;
+                img{
+                    object-position: center;
+                    object-fit: contain;
+                }
+                .top-right {
+                    position: absolute;
+                    top: 8px;
+                    right: 16px;
+                    padding: .3rem;
+                    width: fit-content;
+                    background: $main-color;
+                    border-radius: $border-radius;
+                  }
+                  .centered {
+                    position: absolute;
+                    width: 100%;
+                    top: 65%;
+                    left: 49%;
+                    transform: translate(-50%, -50%);
+                    text-align: right;
+                    padding: .3rem;
+                  }
+                  .bottom-left {
+                    position: absolute;
+                    bottom: 8px;
+                    left: 16px;
+                    i{
+                        color: $main-color;
+                    }
+                  }
+                  .bottom-right {
+                    position: absolute;
+                    bottom: 8px;
+                    right: 16px;
+                    i{
+                        color: $main-color;
+                    }
+                  }
+                  .bottom-right,.centered{
+                    a{
+                        color: #fff;
+                        text-decoration: none;
+                        font-family: cairo bo;
+                        text-align: right;
+                        &:hover{
+                            color: $main-color;
+                            text-decoration: underline;
+                        }
+                    }
+                  }      
+            }
+    }
+    // publishers
+    .publishers{
+        overflow: hidden;
+        h1,p{
+            color: $links-color;
+        }
+        .splide--rtl>.splide__arrows .splide__arrow--next, .splide--rtl>.splide__track>.splide__arrows .splide__arrow--next{
+            display: none;
+        }
+        .splide--rtl>.splide__arrows .splide__arrow--prev, .splide--rtl>.splide__track>.splide__arrows .splide__arrow--prev{
+        display: none;
+        }
+        img{
+            border: 2px solid $main-color;
+            object-position: center;
+            object-fit: contain;
+            width: 130px;
+        }
+    }
+    // about
+    .about{
+        h4{
+            font-family: cairo bo;
+            font-size: 16.5;
+            padding-bottom: .5rem;
+        }
+        p{
+            font-size: 12.5px;
+        }
+    }
+
+}
+// splide
+.games-rounded-carousel .splide__arrows{
+    display: none !important
+}
