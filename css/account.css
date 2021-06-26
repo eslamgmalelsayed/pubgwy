@@ -728,3 +728,7 @@ header img {
   font-family: cairo bo;
   border-top: 0.25rem solid #01A4EA !important;
 }
+
+.order-review .col-2 {
+  margin: -.35rem;
+}

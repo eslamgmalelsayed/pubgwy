@@ -91,6 +91,7 @@ header{
                     margin: 0 -.1rem;
                 }
             }
+            
             .progress-bars{
                 width: 15px;
                 .progress{
@@ -306,3 +307,9 @@ header{
     font-family: cairo bo;
     border-top: .25rem solid $main-color !important;
   }
+
+  .order-review{
+    .col-2{
+        margin:  -.35rem;
+    }
+}
