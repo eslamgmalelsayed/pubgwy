@@ -41,7 +41,6 @@
         top: 100%;
         left: 0;
         background-color: #fff;
-        transition: all 0.3s;
         z-index: 1000;
     }
 }
