@@ -145,11 +145,16 @@ header{
         .tablink{
             border: none;
             width: fit-content;
-            padding: 16px;
+            padding: 12px 10px;
             border-radius: $border-radius $border-radius 0 0;
             margin: 0 .2rem;
             background: #f8f9fa;
             font-weight: bold;
+            font-size: 16px;
+            @media (min-width: 320px) and (max-width: 445px) {
+                font-size: 11px;
+                padding: 12px 5px;
+            }
         }
         .for-border{
             border-radius: $border-radius $border-radius 0 0;

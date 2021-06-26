@@ -550,11 +550,19 @@ header img {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 16px;
+  padding: 12px 10px;
   border-radius: 5px 5px 0 0;
   margin: 0 .2rem;
   background: #f8f9fa;
   font-weight: bold;
+  font-size: 16px;
+}
+
+@media (min-width: 320px) and (max-width: 445px) {
+  .account .tabs-part .tablink {
+    font-size: 11px;
+    padding: 12px 5px;
+  }
 }
 
 .account .tabs-part .for-border {
