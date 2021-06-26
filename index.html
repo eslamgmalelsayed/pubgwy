@@ -33,7 +33,7 @@
     </section>
     <!-- sticky position wrapper -->
     <div class="sticky-position-wrapper sticky-top">
-      <!-- main-bar -->
+    <!-- main-bar -->
     <section class="main-nav">
       <div class="container">
           <nav class="navbar navbar-expand-lg navbar-dark">
@@ -47,8 +47,15 @@
               </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- large view search -->
-                  
-                  <!-- end large video -->
+                    <form class="navbar-form w-50 m-auto d-lg-block d-none my-3" role="search">
+                      <div class="input-group">
+                          <input type="text" class="form-control" placeholder="بحث" name="srch-term" id="srch-term">
+                          <div class="input-group-btn">
+                              <button class="btn btn-default" type="submit"><i class="fas fa-search"></i></button>
+                          </div>
+                      </div>
+                  </form>
+                  <!-- end large view -->
                   <!-- large view -->
                   <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-lg-flex  d-none ">
                       <li class="nav-item">
@@ -64,7 +71,7 @@
                   </ul>
                   <!-- end large view -->
                   <!-- mobile view -->
-                  <ul class="navbar-nav  d-lg-none d-block mobile-nav-links">
+                  <ul class="navbar-nav d-lg-none d-block mobile-nav-links"> 
                       <li class="nav-item">
                         <a class="nav-link sell-linky" href="#">+ بيع</a>
                       </li>
@@ -112,14 +119,6 @@
                   <!-- end mobile view -->
                 </div>
                 <!-- search in mobile view -->
-                <form class="navbar-form w-50 m-auto d-lg-none d-block w-75 my-3" role="search">
-                  <div class="input-group">
-                      <input type="text" class="form-control" placeholder="بحث" name="srch-term" id="srch-term">
-                      <div class="input-group-btn">
-                          <button class="btn btn-default" type="submit"><i class="fas fa-search"></i></button>
-                      </div>
-                  </div>
-              </form>
               <!-- end search mobile video -->
               </div>
             </nav>
@@ -169,6 +168,7 @@
             </nav>
       </div>
   </section>
+    </div>
     </div>
     <!-- games rounded carousel -->
     <section class="games-rounded-carousel">
@@ -1105,6 +1105,7 @@
       }
 } ).mount();
     </script>
+
     <!-- scripts
 </body>
 </html>

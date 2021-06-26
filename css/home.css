@@ -94,7 +94,7 @@ html {
   position: absolute;
   width: 47px;
   height: 47px;
-  background: red;
+  background: #E30613;
   top: 0;
   right: 3%;
   text-align: center;
@@ -715,4 +715,57 @@ footer .banks-logos p {
 
 .games-rounded-carousel .splide__arrows {
   display: none !important;
+}
+
+.side-nav {
+  position: fixed;
+  width: 20%;
+  height: 100%;
+  top: 0;
+  left: -20rem;
+  background: #fff;
+  text-align: center;
+  z-index: 1020;
+}
+
+.side-nav li:hover {
+  background: #F8F9FA;
+}
+
+.side-nav li a {
+  color: #6c757d;
+  font-family: cairo bo;
+  font-size: 12px;
+  text-decoration: none;
+  padding: .6rem 1.5rem !important;
+  border-left: 1px solid #f0eded;
+}
+
+.side-nav li a:hover, .side-nav li a:focus {
+  color: #01A4EA;
+}
+
+.side-nav .dropdown-menu {
+  padding: 0;
+  border: 1px solid #01A4EA;
+  border-radius: 0;
+  z-index: 999;
+}
+
+.side-nav .dropdown-menu a {
+  font-family: cairo li;
+  font-weight: bold;
+}
+
+.side-nav .dropdown-menu li {
+  padding-top: 0 !important;
+  border-bottom: 1px solid #0000001a;
+}
+
+.side-nav .dropdown-menu li:hover {
+  border-bottom: none !important;
+}
+
+.side-nav .dropdown-toggle::after {
+  display: none;
 }
