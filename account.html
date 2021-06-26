@@ -30,153 +30,145 @@
             </div>
         </div>
     </section>
-    <!-- sticky position wrapper -->
-    <div class="sticky-position-wrapper sticky-top">
-      <!-- main-bar -->
-    <section class="main-nav">
-      <div class="container">
-          <nav class="navbar navbar-expand-lg navbar-dark">
-              <div class="container">
-                  <a class="navbar-brand" href="index.html">
-                      <img class="img-fluid" src="img/logo.svg" alt="logo" width="180" height="24">
-                  </a>
-                  <!-- hamburger menu -->
-              <button class="navbar-toggler first-button " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <div class="animated-icon1"><span></span><span></span><span></span></div>
-              </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- large view search -->
-                  <form class="navbar-form w-50 m-auto d-lg-block d-none " role="search">
-                      <div class="input-group">
-                          <input type="text" class="form-control" placeholder="بحث" name="srch-term" id="srch-term">
-                          <div class="input-group-btn">
-                              <button class="btn btn-default" type="submit"><i class="fas fa-search"></i></button>
+      <!-- sticky position wrapper -->
+      <div class="sticky-position-wrapper sticky-top">
+        <!-- main-bar -->
+        <section class="main-nav">
+          <div class="container">
+              <nav class="navbar navbar-expand-lg navbar-dark">
+                  <div style="position: relative;" class="container">
+                      <a class="navbar-brand" href="index.html">
+                          <img class="img-fluid" src="img/logo.svg" alt="logo" width="180" height="24">
+                      </a>
+                      <!-- hamburger menu -->
+                  <button class="navbar-toggler first-button " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="animated-icon1"><span></span><span></span><span></span></div>
+                  </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <!-- large view search -->
+                        <form class="navbar-form w-50 m-auto d-lg-block d-none my-3" role="search">
+                          <div class="input-group">
+                              <input type="text" class="form-control" placeholder="بحث" name="srch-term" id="srch-term">
+                              <div class="input-group-btn">
+                                  <button class="btn btn-default" type="submit"><i class="fas fa-search"></i></button>
+                              </div>
                           </div>
-                      </div>
-                  </form>
-                  <!-- end large video -->
-                  <!-- large view -->
-                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-lg-flex  d-none ">
-                      <li class="nav-item">
-                        <a class="nav-link sell-link" href="#">بيع</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link login-link" href="#">تسجيل الدخول</a>
-                      </li>
-                      <li class="nav-item d-lg-block d-none ">
-                          <a class="nav-link" href="#"><i class="fas fa-dolly"></i></a>
-                          <span class="order-count"></span>
-                      </li>
-                  </ul>
-                  <!-- end large view -->
-                  <!-- mobile view -->
-                  <ul class="navbar-nav  d-lg-none d-block mobile-nav-links">
-                      <li class="nav-item">
-                        <a class="nav-link sell-linky" href="#">+ بيع</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link login-linky" href="#">تسجيل الدخول</a>
-                        </li>
-                      <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          الأقسام 
-                          </a>
-                          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <li><a class="dropdown-item" href="#">لينك</a></li>
-                          <li><a class="dropdown-item" href="#">لينك</a></li>
-                          <li><a class="dropdown-item border-0" href="#">لينك</a></li>
-                          </ul>
-                      </li>
-                      <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          الأقسام 
-                          </a>
-                          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <li><a class="dropdown-item" href="#">لينك</a></li>
-                          <li><a class="dropdown-item" href="#">لينك</a></li>
-                          <li><a class="dropdown-item border-0" href="#">لينك</a></li>
-                          </ul>
-                      </li>
-                      <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          الأقسام 
-                          </a>
-                          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <li><a class="dropdown-item" href="#">لينك</a></li>
-                          <li><a class="dropdown-item" href="#">لينك</a></li>
-                          <li><a class="dropdown-item border-0" href="#">لينك</a></li>
-                          </ul>
-                      </li>
-                      <li class="nav-item border-0">
-                          <a class="nav-link" href="#">لينك</a>
-                      </li>
-                      <li class="nav-item d-lg-block d-none ">
-                          <a class="nav-link" href="#"><i class="fas fa-dolly"></i></a>
-                          <span class="order-count"></span>
-                      </li>
-                     
-                  </ul>
-                  <!-- end mobile view -->
-                </div>
-                <!-- search in mobile view -->
-                <form class="navbar-form w-50 m-auto d-lg-none d-block w-75 my-3" role="search">
-                  <div class="input-group">
-                      <input type="text" class="form-control" placeholder="بحث" name="srch-term" id="srch-term">
-                      <div class="input-group-btn">
-                          <button class="btn btn-default" type="submit"><i class="fas fa-search"></i></button>
-                      </div>
+                      </form>
+                      <!-- end large view -->
+                      <!-- large view -->
+                      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-lg-flex  d-none ">
+                          <li class="nav-item">
+                            <a class="nav-link sell-link" href="#">بيع</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link login-link" href="#">تسجيل الدخول</a>
+                          </li>
+                          <li class="nav-item d-lg-block d-none ">
+                              <a class="nav-link" href="#"><i class="fas fa-dolly"></i></a>
+                              <span class="order-count"></span>
+                          </li>
+                      </ul>
+                      <!-- end large view -->
+                      <!-- mobile view -->
+                      <ul class="navbar-nav d-lg-none d-block mobile-nav-links text-center"> 
+                          <li class="nav-item">
+                            <a class="nav-link sell-linky" href="#">+ بيع</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link login-linky" href="#">تسجيل الدخول</a>
+                            </li>
+                          <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              الأقسام 
+                              </a>
+                              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <li><a class="dropdown-item" href="#">لينك</a></li>
+                              <li><a class="dropdown-item" href="#">لينك</a></li>
+                              <li><a class="dropdown-item border-0" href="#">لينك</a></li>
+                              </ul>
+                          </li>
+                          <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              الأقسام 
+                              </a>
+                              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <li><a class="dropdown-item" href="#">لينك</a></li>
+                              <li><a class="dropdown-item" href="#">لينك</a></li>
+                              <li><a class="dropdown-item border-0" href="#">لينك</a></li>
+                              </ul>
+                          </li>
+                          <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              الأقسام 
+                              </a>
+                              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <li><a class="dropdown-item" href="#">لينك</a></li>
+                              <li><a class="dropdown-item" href="#">لينك</a></li>
+                              <li><a class="dropdown-item border-0" href="#">لينك</a></li>
+                              </ul>
+                          </li>
+                          <li class="nav-item border-0">
+                              <a class="nav-link" href="#">لينك</a>
+                          </li>
+                          <li class="nav-item d-lg-block d-none ">
+                              <a class="nav-link" href="#"><i class="fas fa-dolly"></i></a>
+                              <span class="order-count"></span>
+                          </li>            
+                      </ul>
+                      <!-- end mobile view -->
+                    </div>
+                    <!-- search in mobile view -->
+                    <!-- search in mobile view -->
+                  <!-- end search mobile video -->
                   </div>
-              </form>
-              <!-- end search mobile video -->
-              </div>
-            </nav>
-      </div>
-  </section>
-  <!-- pages bar for large screen -->
-  <section class="pages-bar d-lg-block d-none">
-      <div class="container">
-          <nav class="navbar navbar-expand-lg p-0">
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                  <ul class="navbar-nav m-auto">
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">الرئيسية</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">شحن</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        الأقسام 
-                      </a>
-                      <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item" href="#">لينك</a></li>
-                        <li><a class="dropdown-item" href="#">لينك</a></li>
-                        <li><a class="dropdown-item border-0" href="#">لينك</a></li>
+                </nav>
+          </div>
+      </section>
+      <!-- pages bar for large screen -->
+      <section class="pages-bar d-lg-block d-none">
+          <div class="container">
+              <nav class="navbar navbar-expand-lg p-0">
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                      <ul class="navbar-nav m-auto">
+                        <li class="nav-item">
+                          <a class="nav-link hvr-underline-from-center" href="#">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link hvr-underline-from-center" href="#">شحن</a>
+                        </li>
+                        <li class="nav-item dropdown ">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            الأقسام 
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">لينك</a></li>
+                            <li><a class="dropdown-item" href="#">لينك</a></li>
+                            <li><a class="dropdown-item border-0" href="#">لينك</a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item hvr-underline-from-center">
+                          <a class="nav-link" href="#">لينك</a>
+                        </li>
+                        <li class="nav-item hvr-underline-from-center">
+                          <a class="nav-link" href="#">لينك</a>
+                        </li>
+                        <hr>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            الأقسام 
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">لينك</a></li>
+                            <li><a class="dropdown-item" href="#">لينك</a></li>
+                            <li><a class="dropdown-item border-0" href="#">لينك</a></li>
+                          </ul>
+                        </li>
                       </ul>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">لينك</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">لينك</a>
-                    </li>
-                    <hr>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        الأقسام 
-                      </a>
-                      <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item" href="#">لينك</a></li>
-                        <li><a class="dropdown-item" href="#">لينك</a></li>
-                        <li><a class="dropdown-item border-0" href="#">لينك</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-            </nav>
+                    </div>
+                </nav>
+          </div>
+      </section>
       </div>
-  </section>
-    </div>
     <!-- header -->
     <header class="account-header">
         <img class="img-fluid" src="img/account-header.jpg" alt="header">
@@ -254,54 +246,127 @@
                     <i style="color: #dc3545 ;" class="fas fa-thumbs-down"> (0)</i>
                   </div>
                 </div>
-                <hr style="color:gray;">
-                <div class="row gx-1 text-center justify-content-center m-auto py-2 reviews ">
-                  <div class="col-4 stars">
-                    <span>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                    </span>
-                    
-                  </div>
-                  <div class="col-2 degree">
-                    <span>ممتاز</span>
-                    <span>جيد جدا</span>
-                    <span>جيد</span>
-                    <span>مقبول</span>
-                    <span>ردئ</span>
-                  </div>
-                  <div class="col-1 progress-bars">
-                     <div class="progress">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="70"
-                      aria-valuemin="0" aria-valuemax="100" style="width:70%">
-                        <span class="sr-only">70% Complete</span>
-                      </div>
-                    </div> 
-                  </div>
-                  <div class="col-1 percentage ">
-                    <span>98%</span>
-                    <span>1%</span>
-                    <span>1%</span>
-                    <span>0%</span>
-                    <span>0%</span>
+                <hr style="color:gray;">          
+                <div class="row gx-0 m-auto justify-content-center py-3 reviews">
+                  <div class="col-8">
+                    <table class="w-100">
+                      <tbody>
+                      <tr>
+                      <td class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </td>
+                      <td class="degree">
+                        <span>ممتاز</span>
+                      </td>
+                      <td class="progress-bars">
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 98%;" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </td>
+                      <td class="percentage">
+                        <span>98%</span>
+                      </td>
+                      </tr>
+                      <tr>
+                        <td class="stars">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </td>
+                        <td class="degree">
+                          <span>جيد جدا</span>
+                        </td>
+                        <td class="progress-bars">
+                          <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 1%;" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </td>
+                        <td class="percentage">
+                          <span>1%</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="stars">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </td>
+                        <td class="degree">
+                          <span>جيد</span>
+                        </td>
+                        <td class="progress-bars">
+                          <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 1%;" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </td>
+                        <td class="percentage">
+                          <span>1%</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="stars">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </td>
+                        <td class="degree">
+                          <span>مقبول</span>
+                        </td>
+                        <td class="progress-bars">
+                          <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </td>
+                        <td class="percentage">
+                          <span>0%</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="stars">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </td>
+                        <td class="degree">
+                          <span>ردئ</span>
+                        </td>
+                        <td class="progress-bars">
+                          <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </td>
+                        <td class="percentage">
+                          <span>0%</span>
+                        </td>
+                      </tr>
+                      </tbody>
+                      </table>
                   </div>
                   <div class="col-4 average">
-                    <h6 class="mb-0">تقييم</h6>
-                    <span class="stars">
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                    </span>
-                    <h5>5.0</h5>
+                    <h6>التقييم</h6>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                      <h5>5.0</h5>
                   </div>
-                  
                 </div>
-                <hr style="color:gray;">
+                 <hr style="color:gray;">
             </div>
               <!-- 3 tabs part-->
                 <div  class="col-md-9 col-sm-12 tabs-part">         

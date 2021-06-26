@@ -84,7 +84,7 @@ header{
         }
         .reviews{
             .stars{
-                font-size: 10px;
+                font-size: 9px;
                 padding: 0;
                 color: $main-color;
                 i{
@@ -92,9 +92,10 @@ header{
                 }
             }
             .progress-bars{
-                height: 8px;
+                width: 15px;
                 .progress{
-                    
+                    height: 6px;
+                    border: 1px solid rgb(211, 206, 206);
                     .progress-bar{
                         background: $main-color;
                     }
@@ -118,16 +119,16 @@ header{
                 }
             }
             .average{
-                font-size: 16px;
+                font-size: 12px;
                 .stars{
-                    font-size: 13px;
+                    font-size: 15px;
                     @media (min-width: 768px) and (max-width: 1200px) {
                         font-size: 8px;
                      }
                 }
                 h5{
                     font-weight: bold;
-                    font-size: 30px;
+                    font-size: 25px;
                     color: $main-color;
                 }
             }

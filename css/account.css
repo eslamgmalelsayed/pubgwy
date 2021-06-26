@@ -471,7 +471,7 @@ header img {
 }
 
 .account .personal-part .reviews .stars {
-  font-size: 10px;
+  font-size: 9px;
   padding: 0;
   color: #01A4EA;
 }
@@ -481,7 +481,12 @@ header img {
 }
 
 .account .personal-part .reviews .progress-bars {
-  height: 8px;
+  width: 15px;
+}
+
+.account .personal-part .reviews .progress-bars .progress {
+  height: 6px;
+  border: 1px solid #d3cece;
 }
 
 .account .personal-part .reviews .progress-bars .progress .progress-bar {
@@ -510,11 +515,11 @@ header img {
 }
 
 .account .personal-part .reviews .average {
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .account .personal-part .reviews .average .stars {
-  font-size: 13px;
+  font-size: 15px;
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
@@ -525,7 +530,7 @@ header img {
 
 .account .personal-part .reviews .average h5 {
   font-weight: bold;
-  font-size: 30px;
+  font-size: 25px;
   color: #01A4EA;
 }
 
