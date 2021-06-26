@@ -12,9 +12,11 @@ header{
 //  account
 .account{
     background: $section-color;
+    margin-top: -2.5rem;
     .personal-part{
         background: #fff;
         border-radius: $border-radius;
+        box-shadow: 0px 3px 9px 4px rgba(165,153,153,0.25);
         img{
             width: 100px;
         }
@@ -33,16 +35,268 @@ header{
             color: rgb(40, 167, 69);
         }
         .multicolored{
-            width: 100px;
-            height: 2px;
-            background: linear-gradient(110deg,red,rgb(253, 253, 64) 60%,rgb(138, 223, 138) 20%);
+            height: 4px;
+            background: linear-gradient(110deg,rgb(251, 72, 72),rgb(216, 216, 146) 60%,rgb(135, 211, 135) 20%);
         }
         .contact-me{
             i{
                 font-size: 35px;
                 color: $main-color;
+                @media (min-width: 768px) and (max-width: 991px) {
+                   font-size: 25px;
+                }
             }
         }
-        
+        .modal-part{
+            .subscribe-btn{
+                width: fit-content;
+                padding: .2rem 3rem;
+                background: #fff;
+                color: #6c757d;
+                border-radius: $border-radius;
+                border: none;
+                box-shadow: 0px 0px 9px 4px rgba(165,153,153,0.35);
+                &:hover{
+                    background: #6c757d;
+                    color: #fff;
+                }
+                i{
+                    color: inherit;
+                }
+            }
+            .modal-title{
+                font-family: cairo bo;
+            }
+            .modal-body{
+                a{
+                    color: #fff;
+                    padding: .2rem .5rem;
+                }
+            }
+        }   
+        .stats{
+            h6{
+                font-weight: bold;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+        .reviews{
+            .stars{
+                font-size: 10px;
+                padding: 0;
+                color: $main-color;
+                i{
+                    margin: 0 -.1rem;
+                }
+            }
+            .progress-bars{
+                height: 8px;
+                .progress{
+                    
+                    .progress-bar{
+                        background: $main-color;
+                    }
+                }
+            }
+            .degree{
+                span{
+                    color: $main-color;
+                    font-size: 10px;
+                    font-weight: bold;
+                    display: block;
+                    @media (min-width: 768px) and (max-width: 991px) {
+                        font-size: .7vw;
+                     }
+                }
+            }
+            .percentage{
+                font-size: 9px;
+                span{
+                    display: block;
+                }
+            }
+            .average{
+                font-size: 16px;
+                .stars{
+                    font-size: 13px;
+                    @media (min-width: 768px) and (max-width: 1200px) {
+                        font-size: 8px;
+                     }
+                }
+                h5{
+                    font-weight: bold;
+                    font-size: 30px;
+                    color: $main-color;
+                }
+            }
+        }
+    }
+    .tabs-part{
+        @media (min-width: 320px) and (max-width: 767px) {
+            margin-top: 3rem;
+        }
+        .active{
+            border-top: .25rem solid $main-color !important;
+            font-family: cairo bo;
+        }
+        .tablink{
+            border: none;
+            width: fit-content;
+            padding: 16px;
+            border-radius: $border-radius $border-radius 0 0;
+            margin: 0 .2rem;
+            background: #f8f9fa;
+            font-weight: bold;
+        }
+        .for-border{
+            border-radius: $border-radius $border-radius 0 0;
+        }
+    }
+    .tabcontent{
+        background: #fff;
+        border-radius: $border-radius 0 $border-radius $border-radius;
+        box-shadow: 0px 3px 9px 4px rgba(165,153,153,0.25);
+        h4{
+            color: #6c757d;
+        }
+        .filter-part{
+            .form-control{
+                width: 90%;
+                border-radius: $border-radius;
+                border: 1px solid rgb(230, 224, 224);
+                &:focus{
+                    box-shadow: 0px 0px 5px 1px rgba(1, 164, 234,.50);
+                } 
+            }
+            .btn-default{
+                margin-right: -2.5rem;
+                box-shadow: none;
+                color: $main-color;
+                z-index: 99;
+            }
+        }
+        .first-select{
+            select{
+                width: 90%;
+                border-radius: $border-radius;
+                border: 1px solid rgb(230, 224, 224);
+                &:focus{
+                    box-shadow: 0px 0px 5px 1px rgba(1, 164, 234,.50);
+                }
+                @media (min-width: 320px) and (max-width: 768px) {
+                    width: 100%;
+                    margin: .7rem 0;
+                }
+            }
+            
+            
+        }
+        .second-select{
+            select{
+                width: 60%;
+                border-radius: $border-radius;
+                border: 1px solid rgb(230, 224, 224);
+                &:focus{
+                    box-shadow: 0px 0px 5px 1px rgba(1, 164, 234,.50);
+                }
+            }
+        }
+        select{
+            color:#6c757d;
+            outline: none;
+        }
+        .orders-part{
+            img{
+                max-width: 100px;
+                min-width: 100px;
+                object-fit: contain;
+                object-position: center;
+                background: #E9ECEF;
+                // responsive
+                @media (min-width: 320px) and (max-width: 768px) {
+                    max-width: 100% !important;
+                    min-width: 100% !important;
+                    margin-bottom: 1rem;
+                }
+            }
+            .order-title{
+                a{
+                    color: #000;
+                    text-decoration: none;
+                    &:hover{
+                        color: $main-color;
+                        text-decoration: underline;
+                    }
+                }
+                p{
+                    font-size: 12px;
+                }
+            }
+            .order-price{
+                h4{
+                    color: $main-color;
+                    font-size: 16px;
+                }
+                p{
+                    font-size: 24px;
+                }
+            }
+            .order-avail{
+                h4{
+                    color: $main-color;
+                    font-size: 16px;
+                }
+                input{
+                    width: 100%;
+                    padding: .3rem 0;
+                    border: 1px solid  #afb4b8;
+                    border-radius: $border-radius;
+                    &:focus{
+                        box-shadow: 0px 0px 5px 1px rgba(1, 164, 234,.50);
+                        outline: none;
+                    }
+                }
+            }
+            .order-submit{
+                a{
+                    color: #fff;
+                    background: $main-color;
+                    text-decoration: none;
+                    padding: 0 1rem;
+                    border-radius: $border-radius;
+                }
+            }
+        }
+    }
+     // last hr hide
+     hr:last-of-type{
+        display: none;
+    }
+    // pagination
+    .pagination{
+        .page-link{
+            border: none;
+            box-shadow: none;
+            width: 35px;
+            height: 35px;
+            padding-top: .2rem;
+            &:focus{
+                border: 2px solid $main-color;
+                border-radius: 50%;
+            }
+            
+        }
+    }
+    [aria-label="Next"],[aria-label="Previous"]{
+        border: none !important;
     }
 }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #fff !important;
+    font-family: cairo bo;
+    border-top: .25rem solid $main-color !important;
+  }

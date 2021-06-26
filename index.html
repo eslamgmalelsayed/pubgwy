@@ -19,11 +19,11 @@
 <body>
     <!-- top-bar -->
     <section class="top-bar">
-        <div class="container py-2">
+        <div class="container py-2">   
             <div class="row m-auto">
                 <div class="col-lg-6 col-12 text-lg-start text-center">خلافاَ للإعتقاد السائد فإن لوريم إيبسوم ليس نصاَ عشوائياً</div>
                 <div class="col-lg-6 col-12 text-lg-end text-center">
-                    <a href="#">المدونة</a>
+                    <a href="account.html">المدونة</a>
                     <a href="#">تسجيل الدخول</a>
                     <a href="#">تسجيل حساب جديد</a>
                     <a class="last-link" href="#">+ إضافة رصيد</a>
@@ -72,6 +72,14 @@
                   <!-- end large view -->
                   <!-- mobile view -->
                   <ul class="navbar-nav  d-lg-none d-block mobile-nav-links">
+                    <form class="navbar-form w-100 m-auto d-lg-none d-block" role="search">
+                      <div class="input-group">
+                          <input type="text" class="form-control" placeholder="بحث" name="srch-term" id="srch-term">
+                          <div class="input-group-btn">
+                              <button class="btn btn-default" type="submit"><i class="fas fa-search"></i></button>
+                          </div>
+                      </div>
+                   </form>
                       <li class="nav-item">
                         <a class="nav-link sell-linky" href="#">+ بيع</a>
                       </li>
@@ -114,20 +122,19 @@
                       <li class="nav-item d-lg-block d-none ">
                           <a class="nav-link" href="#"><i class="fas fa-dolly"></i></a>
                           <span class="order-count"></span>
-                      </li>
-                     
+                      </li>            
                   </ul>
                   <!-- end mobile view -->
                 </div>
                 <!-- search in mobile view -->
-                <form class="navbar-form w-50 m-auto d-lg-none d-block w-75 my-3" role="search">
+                <!-- <form class="navbar-form w-50 m-auto d-lg-none d-block w-75 my-3" role="search">
                   <div class="input-group">
                       <input type="text" class="form-control" placeholder="بحث" name="srch-term" id="srch-term">
                       <div class="input-group-btn">
                           <button class="btn btn-default" type="submit"><i class="fas fa-search"></i></button>
                       </div>
                   </div>
-              </form>
+              </form> -->
               <!-- end search mobile video -->
               </div>
             </nav>
@@ -140,12 +147,12 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                   <ul class="navbar-nav m-auto">
                     <li class="nav-item">
-                      <a class="nav-link" href="#">الرئيسية</a>
+                      <a class="nav-link hvr-underline-from-center" href="#">الرئيسية</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">شحن</a>
+                      <a class="nav-link hvr-underline-from-center" href="#">شحن</a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown ">
                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         الأقسام 
                       </a>
@@ -155,10 +162,10 @@
                         <li><a class="dropdown-item border-0" href="#">لينك</a></li>
                       </ul>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item hvr-underline-from-center">
                       <a class="nav-link" href="#">لينك</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item hvr-underline-from-center">
                       <a class="nav-link" href="#">لينك</a>
                     </li>
                     <hr>
@@ -243,7 +250,7 @@
         <div class="row g-2 m-auto header-banner m-auto text-center">
           <!-- header images -->
           <div class="col-lg-3 col-sm-12 header-images">
-            <div class="row g-2">
+            <div class="row gy-1">
               <div class="col-lg-12 col-6">
                 <a href="#"><img class="img-fluid" src="img/game1.png" alt="game"></a>
               </div>
@@ -254,7 +261,7 @@
           </div>
           <!-- header carousel -->
           <div class="header-carousel col-lg-9 col-sm-12 ps-0">
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -288,7 +295,9 @@
           <!-- loop card -->
           <div class="col-xxl-2 col-lg-3 col-md-4 col-sm-6 hvr-float">
               <div class="card">
-                <span class="discount-badge"><span>10%</span></span>       
+              <span class="discount-badge">
+                <p><i>10%</i></p>
+              </span>
               <img src="img/card1.jpg" class="card-img-top" alt="card"> 
               <div class="card-body pb-0">
                 <a class="card-title" href="#">ببجي موبايل سيزون 5 ببجي موبايل سيزون</a>
@@ -308,7 +317,9 @@
           <!-- end loop -->
           <div class="col-xxl-2 col-lg-3 col-md-4 col-sm-6 hvr-float">
             <div class="card">
-              <span class="discount-badge"><span>10%</span></span>       
+              <span class="discount-badge">
+                <p><i>10%</i></p>
+              </span>      
             <img src="img/card1.jpg" class="card-img-top" alt="card"> 
             <div class="card-body pb-0">
               <a class="card-title" href="#">ببجي موبايل سيزون 5 ببجي موبايل سيزون</a>
@@ -327,7 +338,9 @@
         </div>
         <div class="col-xxl-2 col-lg-3 col-md-4 col-sm-6 hvr-float">
           <div class="card">
-            <span class="discount-badge"><span>10%</span></span>       
+            <span class="discount-badge">
+                <p><i>10%</i></p>
+              </span>      
           <img src="img/card1.jpg" class="card-img-top" alt="card"> 
           <div class="card-body pb-0">
             <a class="card-title" href="#">ببجي موبايل سيزون 5 ببجي موبايل سيزون</a>
@@ -346,7 +359,9 @@
       </div>
       <div class="col-xxl-2 col-lg-3 col-md-4 col-sm-6 hvr-float">
         <div class="card">
-          <span class="discount-badge"><span>10%</span></span>       
+          <span class="discount-badge">
+                <p><i>10%</i></p>
+              </span>      
         <img src="img/card1.jpg" class="card-img-top" alt="card"> 
         <div class="card-body pb-0">
           <a class="card-title" href="#">ببجي موبايل سيزون 5 ببجي موبايل سيزون</a>
@@ -364,7 +379,9 @@
       </div>
     </div><div class="col-xxl-2 col-lg-3 col-md-4 col-sm-6 hvr-float">
       <div class="card">
-        <span class="discount-badge"><span>10%</span></span>       
+        <span class="discount-badge">
+                <p><i>10%</i></p>
+              </span>      
       <img src="img/card1.jpg" class="card-img-top" alt="card"> 
       <div class="card-body pb-0">
         <a class="card-title" href="#">ببجي موبايل سيزون 5 ببجي موبايل سيزون</a>
@@ -383,7 +400,9 @@
   </div>
       <div class="col-xxl-2 col-lg-3 col-md-4 col-sm-6 hvr-float">
         <div class="card">
-          <span class="discount-badge"><span>10%</span></span>       
+          <span class="discount-badge">
+                <p><i>10%</i></p>
+              </span>      
         <img src="img/card1.jpg" class="card-img-top" alt="card"> 
         <div class="card-body pb-0">
           <a class="card-title" href="#">ببجي موبايل سيزون 5 ببجي موبايل سيزون</a>
@@ -402,9 +421,9 @@
     </div>    
         </div>
         <!-- row upcoming -->
-        <div class="row g-2 m-auto upcoming py-3 text-center">
+        <div class="row g-1 m-auto upcoming py-3 text-center">
           <div class="col-lg-3 col-sm-12">
-            <div class="row g-2">
+            <div class="row g-1">
               <div class="col-lg-12 col-6">
                 <a href="#"><img class="img-fluid" src="img/upcoming1.png" alt="header"></a>
               </div>
@@ -414,7 +433,7 @@
             </div>
           </div>
           <div class="col-lg-3 col-sm-12 ">
-            <div class="row g-2">
+            <div class="row g-1">
               <div class="col-lg-12 col-6">
                 <a href="#"><img class="img-fluid" src="img/upcoming3.png" alt="header"></a>
               </div>
@@ -446,7 +465,7 @@
                 </div>
               </div>
               <div class="card-body pb-0  pt-0">
-                <a class="card-title" href="#">AK-47 | Frontside Misty</a>
+                <a class="card-title" href="#">اكم اكم 47</a>
                 <div class="row m-auto pt-3">
                   <div class="col-7">
                     <div>
@@ -478,7 +497,7 @@
                 </div>
               </div>
               <div class="card-body pb-0  pt-0">
-                <a class="card-title" href="#">AK-47 | Frontside Misty</a>
+                <a class="card-title" href="#">اكم اكم 47</a>
                 <div class="row m-auto pt-3">
                   <div class="col-7">
                     <div>
@@ -509,7 +528,7 @@
                 </div>
               </div>
               <div class="card-body pb-0  pt-0">
-                <a class="card-title" href="#">AK-47 | Frontside Misty</a>
+                <a class="card-title" href="#">اكم اكم 47</a>
                 <div class="row m-auto pt-3">
                   <div class="col-7">
                     <div>
@@ -540,7 +559,7 @@
                 </div>
               </div>
               <div class="card-body pb-0 pt-0">
-                <a class="card-title" href="#">AK-47 | Frontside Misty</a>
+                <a class="card-title" href="#">اكم اكم 47</a>
                 <div class="row m-auto pt-3">
                   <div class="col-7">
                     <div>
@@ -571,7 +590,7 @@
                 </div>
               </div>
               <div class="card-body pb-0  pt-0">
-                <a class="card-title" href="#">AK-47 | Frontside Misty</a>
+                <a class="card-title" href="#">اكم اكم 47</a>
                 <div class="row m-auto pt-3">
                   <div class="col-7">
                     <div>
@@ -602,7 +621,7 @@
                 </div>
               </div>
               <div class="card-body pb-0  pt-0">
-                <a class="card-title" href="#">AK-47 | Frontside Misty</a>
+                <a class="card-title" href="#">اكم اكم 47</a>
                 <div class="row m-auto pt-3">
                   <div class="col-7">
                     <div>
@@ -619,7 +638,7 @@
               </div>
             </div>
           </div>
-          <a class="text-start my-4 sub-link " href="#">عرض كل المزادات</a>
+          <a class="text-start my-4 sub-link " href="#">جميع المزادات</a>
         </div>
         <!-- row all-offers -->
         <div class="row g-2 m-auto all-offers py-3 text-center">
@@ -643,7 +662,9 @@
           <!-- loop card -->
           <div class="col-xxl-2 col-lg-3 col-md-4 col-sm-6 hvr-float">
             <div class="card">
-              <span class="discount-badge"><span>10%</span></span>       
+              <span class="discount-badge">
+                <p><i>10%</i></p>
+              </span>      
             <img src="img/opportunity1.jpg" class="card-img-top" alt="card"> 
             <div class="card-body pb-0">
               <a class="card-title" href="#">ببجي موبايل سيزون 5 ببجي موبايل سيزون</a>
@@ -663,7 +684,9 @@
         <!-- end loop -->
         <div class="col-xxl-2 col-lg-3 col-md-4 col-sm-6 hvr-float">
           <div class="card">
-            <span class="discount-badge"><span>10%</span></span>       
+            <span class="discount-badge">
+                <p><i>10%</i></p>
+              </span>      
           <img src="img/card1.jpg" class="card-img-top" alt="card"> 
           <div class="card-body pb-0">
             <a class="card-title" href="#">ببجي موبايل سيزون 5 ببجي موبايل سيزون</a>
@@ -682,7 +705,9 @@
         </div>
         <div class="col-xxl-2 col-lg-3 col-md-4 col-sm-6 hvr-float">
           <div class="card">
-            <span class="discount-badge"><span>10%</span></span>       
+            <span class="discount-badge">
+                <p><i>10%</i></p>
+              </span>      
           <img src="img/card1.jpg" class="card-img-top" alt="card"> 
           <div class="card-body pb-0">
             <a class="card-title" href="#">ببجي موبايل سيزون 5 ببجي موبايل سيزون</a>
@@ -701,7 +726,9 @@
         </div>
         <div class="col-xxl-2 col-lg-3 col-md-4 col-sm-6 hvr-float">
         <div class="card">
-          <span class="discount-badge"><span>10%</span></span>       
+          <span class="discount-badge">
+                <p><i>10%</i></p>
+              </span>      
         <img src="img/card1.jpg" class="card-img-top" alt="card"> 
         <div class="card-body pb-0">
           <a class="card-title" href="#">ببجي موبايل سيزون 5 ببجي موبايل سيزون</a>
@@ -720,7 +747,9 @@
         </div>
         <div class="col-xxl-2 col-lg-3 col-md-4 col-sm-6 hvr-float">
           <div class="card">
-            <span class="discount-badge"><span>10%</span></span>       
+            <span class="discount-badge">
+                <p><i>10%</i></p>
+              </span>      
           <img src="img/card1.jpg" class="card-img-top" alt="card"> 
           <div class="card-body pb-0">
             <a class="card-title" href="#">ببجي موبايل سيزون 5 ببجي موبايل سيزون</a>
@@ -739,7 +768,9 @@
         </div>
         <div class="col-xxl-2 col-lg-3 col-md-4 col-sm-6 hvr-float">
             <div class="card">
-              <span class="discount-badge"><span>10%</span></span>       
+              <span class="discount-badge">
+                <p><i>10%</i></p>
+              </span>      
             <img src="img/card1.jpg" class="card-img-top" alt="card"> 
             <div class="card-body pb-0">
               <a class="card-title" href="#">ببجي موبايل سيزون 5 ببجي موبايل سيزون</a>
@@ -761,14 +792,14 @@
         <!-- row blog -->
         <div class="row g-2 m-auto blog upcoming py-3 text-center">
           <div class="col-lg-3 col-sm-12">
-            <div class="row g-2">
+            <div class="row g-1">
               <div class="col-lg-12 col-md-6 col-sm-12">
                 <div class="card">
                   <div class="top-right">الأخبار</div>
                   <div class="bottom-right">
                     <a href="#">أحدث الألعاب مجانا</a>
                   </div>
-                  <a href="#"><img src="img/upcoming1.png" class="card-img-top" alt="blog"></a>
+                  <a href="#"><img src="img/blog6.jpg" class="card-img-top" alt="blog"></a>
                 </div>
               </div>
               <div class="col-lg-12 col-md-6 col-sm-12">
@@ -777,20 +808,20 @@
                   <div class="bottom-right">
                     <a href="#">أحدث الألعاب مجانا</a>
                   </div>
-                  <a href="#"><img src="img/upcoming2.png" class="card-img-top" alt="blog"></a>
+                  <a href="#"><img src="img/blog6.jpg" class="card-img-top" alt="blog"></a>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-sm-12">
-            <div class="row g-2">
+            <div class="row  g-1">
               <div class="col-lg-12 col-md-6 col-sm-12">
                 <div class="card">
                   <div class="top-right">الأخبار</div>
                   <div class="bottom-right">
                     <a href="#">أحدث الألعاب مجانا</a>
                   </div>
-                  <a href="#"><img src="img/upcoming1.png" class="card-img-top" alt="blog"></a>
+                  <a href="#"><img src="img/blog6.jpg" class="card-img-top" alt="blog"></a>
                 </div>
               </div>
               <div class="col-lg-12 col-md-6 col-sm-12">
@@ -799,7 +830,7 @@
                   <div class="bottom-right">
                     <a href="#">أحدث الألعاب مجانا</a>
                   </div>
-                  <a href="#"><img src="img/upcoming2.png" class="card-img-top" alt="blog"></a>
+                  <a href="#"><img src="img/blog6.jpg" class="card-img-top" alt="blog"></a>
                 </div>
               </div>
             </div>
@@ -813,7 +844,7 @@
               <div class="bottom-left">
                 <h6><i class="fas fa-calendar-alt"></i> 22 Haziran 2021, 10:55</h6>
               </div>
-              <a href="#"><img src="img/blog1.jpg" class="card-img-top" alt="blog"></a>
+              <a href="#"><img src="img/blog5.jpg" class="card-img-top" alt="blog"></a>
             </div>
           </div>
           <a class="text-start my-4 sub-link " href="#">عرض كل المدونات</a>
@@ -1039,7 +1070,7 @@
       autoplay : true,
       pagination: false,
       lazyLoad : 'nearby',
-      perPage: 9,
+      perPage: 13,
 	    focus  : 'center',
       padding: 5,
       breakpoints: {

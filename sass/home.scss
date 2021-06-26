@@ -35,6 +35,7 @@
         img{
             object-fit: contain;
             object-position: center;
+            border-radius: $border-radius;
         }
         .carousel-indicators [data-bs-target]{
             width: 15px;
@@ -44,6 +45,10 @@
         .carousel-indicators .active{
             background-color: $main-color !important;
         }
+        .carousel-item {
+            transition: ease-out .5s;
+        }
+        
     }
     // cards-wrapper
     .cards-wrapper{
@@ -52,7 +57,8 @@
             .card-body{
                 .card-title{
                    color: #000;
-                   font-family: cairo bo;
+                   font-weight: bold;
+                   font-size: 18.4px;
                    display: block;
                    text-decoration: none;
                    text-overflow: ellipsis;
@@ -97,6 +103,7 @@
         img{
             object-fit: contain;
             object-position: center;
+            border-radius: $border-radius;
         }
     }
     // offers
@@ -136,7 +143,8 @@
             }
             .card-title{
                 color: #000;
-                font-family: cairo bo;
+                font-weight: bold;
+                font-size: 18.4px;
                 display: block;
                 text-decoration: none;
                 &:hover{
@@ -175,6 +183,7 @@
         img{
             object-fit: contain;
             object-position: center;
+            border-radius: $border-radius;
         }
     }
     // opportunities
@@ -192,6 +201,7 @@
                 img{
                     object-position: center;
                     object-fit: contain;
+                    border-radius: 0;
                 }
                 .top-right {
                     position: absolute;

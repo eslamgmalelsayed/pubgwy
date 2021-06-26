@@ -62,7 +62,7 @@ html {
 }
 
 .animated-icon1 span:nth-child(1) {
-  top: 0px;
+  top: 2px;
 }
 
 .animated-icon1 span:nth-child(2) {
@@ -70,7 +70,7 @@ html {
 }
 
 .animated-icon1 span:nth-child(3) {
-  top: 20px;
+  top: 17px;
 }
 
 .animated-icon1.open span:nth-child(1) {
@@ -105,6 +105,12 @@ html {
 
 .top-bar .container a:hover {
   text-decoration: underline;
+}
+
+@media (min-width: 320px) and (max-width: 426px) {
+  .top-bar .container a {
+    font-size: 7px;
+  }
 }
 
 .top-bar .container .last-link {
@@ -191,20 +197,11 @@ html {
 
 .pages-bar {
   background: #fff;
-  height: 5vh;
-}
-
-.pages-bar ul {
-  -webkit-box-shadow: 0px 26px 82px 3px rgba(255, 255, 255, 0.59);
-          box-shadow: 0px 26px 82px 3px rgba(255, 255, 255, 0.59);
-}
-
-.pages-bar ul li {
-  padding-top: .1rem;
+  -webkit-box-shadow: 0px 3px 9px 4px rgba(165, 153, 153, 0.25);
+          box-shadow: 0px 3px 9px 4px rgba(165, 153, 153, 0.25);
 }
 
 .pages-bar ul li:hover {
-  border-bottom: 3px solid #01A4EA;
   background: #F8F9FA;
 }
 
@@ -213,8 +210,8 @@ html {
   font-family: cairo bo;
   font-size: 12px;
   text-decoration: none;
-  padding: .4rem 1.5rem !important;
-  border-left: 1px solid #0000001a;
+  padding: .6rem 1.5rem !important;
+  border-left: 1px solid #f0eded;
 }
 
 .pages-bar ul li a:hover, .pages-bar ul li a:focus {
@@ -232,6 +229,11 @@ html {
   z-index: 999;
 }
 
+.pages-bar .dropdown-menu a {
+  font-family: cairo li;
+  font-weight: bold;
+}
+
 .pages-bar .dropdown-menu li {
   padding-top: 0 !important;
   border-bottom: 1px solid #0000001a;
@@ -247,6 +249,8 @@ html {
 
 .pages-bar .dropdown:hover .dropdown-menu {
   display: block !important;
+  -webkit-box-shadow: 0px 6px 82px 3px rgba(255, 255, 255, 0.7);
+          box-shadow: 0px 6px 82px 3px rgba(255, 255, 255, 0.7);
 }
 
 .mobile-nav-links a {
@@ -368,11 +372,14 @@ header img {
 
 .account {
   background: #F3F3F3;
+  margin-top: -2.5rem;
 }
 
 .account .personal-part {
   background: #fff;
   border-radius: 5px;
+  -webkit-box-shadow: 0px 3px 9px 4px rgba(165, 153, 153, 0.25);
+          box-shadow: 0px 3px 9px 4px rgba(165, 153, 153, 0.25);
 }
 
 .account .personal-part img {
@@ -394,12 +401,302 @@ header img {
 }
 
 .account .personal-part .multicolored {
-  width: 100px;
-  height: 2px;
-  background: linear-gradient(110deg, red, #fdfd40 60%, #8adf8a 20%);
+  height: 4px;
+  background: linear-gradient(110deg, #fb4848, #d8d892 60%, #87d387 20%);
 }
 
 .account .personal-part .contact-me i {
   font-size: 35px;
   color: #01A4EA;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .account .personal-part .contact-me i {
+    font-size: 25px;
+  }
+}
+
+.account .personal-part .modal-part .subscribe-btn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: .2rem 3rem;
+  background: #fff;
+  color: #6c757d;
+  border-radius: 5px;
+  border: none;
+  -webkit-box-shadow: 0px 0px 9px 4px rgba(165, 153, 153, 0.35);
+          box-shadow: 0px 0px 9px 4px rgba(165, 153, 153, 0.35);
+}
+
+.account .personal-part .modal-part .subscribe-btn:hover {
+  background: #6c757d;
+  color: #fff;
+}
+
+.account .personal-part .modal-part .subscribe-btn i {
+  color: inherit;
+}
+
+.account .personal-part .modal-part .modal-title {
+  font-family: cairo bo;
+}
+
+.account .personal-part .modal-part .modal-body a {
+  color: #fff;
+  padding: .2rem .5rem;
+}
+
+.account .personal-part .stats h6 {
+  font-weight: bold;
+}
+
+.account .personal-part .stats p {
+  font-size: 14px;
+}
+
+.account .personal-part .reviews .stars {
+  font-size: 10px;
+  padding: 0;
+  color: #01A4EA;
+}
+
+.account .personal-part .reviews .stars i {
+  margin: 0 -.1rem;
+}
+
+.account .personal-part .reviews .progress-bars {
+  height: 8px;
+}
+
+.account .personal-part .reviews .progress-bars .progress .progress-bar {
+  background: #01A4EA;
+}
+
+.account .personal-part .reviews .degree span {
+  color: #01A4EA;
+  font-size: 10px;
+  font-weight: bold;
+  display: block;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .account .personal-part .reviews .degree span {
+    font-size: .7vw;
+  }
+}
+
+.account .personal-part .reviews .percentage {
+  font-size: 9px;
+}
+
+.account .personal-part .reviews .percentage span {
+  display: block;
+}
+
+.account .personal-part .reviews .average {
+  font-size: 16px;
+}
+
+.account .personal-part .reviews .average .stars {
+  font-size: 13px;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .account .personal-part .reviews .average .stars {
+    font-size: 8px;
+  }
+}
+
+.account .personal-part .reviews .average h5 {
+  font-weight: bold;
+  font-size: 30px;
+  color: #01A4EA;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .account .tabs-part {
+    margin-top: 3rem;
+  }
+}
+
+.account .tabs-part .active {
+  border-top: 0.25rem solid #01A4EA !important;
+  font-family: cairo bo;
+}
+
+.account .tabs-part .tablink {
+  border: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 16px;
+  border-radius: 5px 5px 0 0;
+  margin: 0 .2rem;
+  background: #f8f9fa;
+  font-weight: bold;
+}
+
+.account .tabs-part .for-border {
+  border-radius: 5px 5px 0 0;
+}
+
+.account .tabcontent {
+  background: #fff;
+  border-radius: 5px 0 5px 5px;
+  -webkit-box-shadow: 0px 3px 9px 4px rgba(165, 153, 153, 0.25);
+          box-shadow: 0px 3px 9px 4px rgba(165, 153, 153, 0.25);
+}
+
+.account .tabcontent h4 {
+  color: #6c757d;
+}
+
+.account .tabcontent .filter-part .form-control {
+  width: 90%;
+  border-radius: 5px;
+  border: 1px solid #e6e0e0;
+}
+
+.account .tabcontent .filter-part .form-control:focus {
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(1, 164, 234, 0.5);
+          box-shadow: 0px 0px 5px 1px rgba(1, 164, 234, 0.5);
+}
+
+.account .tabcontent .filter-part .btn-default {
+  margin-right: -2.5rem;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #01A4EA;
+  z-index: 99;
+}
+
+.account .tabcontent .first-select select {
+  width: 90%;
+  border-radius: 5px;
+  border: 1px solid #e6e0e0;
+}
+
+.account .tabcontent .first-select select:focus {
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(1, 164, 234, 0.5);
+          box-shadow: 0px 0px 5px 1px rgba(1, 164, 234, 0.5);
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .account .tabcontent .first-select select {
+    width: 100%;
+    margin: .7rem 0;
+  }
+}
+
+.account .tabcontent .second-select select {
+  width: 60%;
+  border-radius: 5px;
+  border: 1px solid #e6e0e0;
+}
+
+.account .tabcontent .second-select select:focus {
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(1, 164, 234, 0.5);
+          box-shadow: 0px 0px 5px 1px rgba(1, 164, 234, 0.5);
+}
+
+.account .tabcontent select {
+  color: #6c757d;
+  outline: none;
+}
+
+.account .tabcontent .orders-part img {
+  max-width: 100px;
+  min-width: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+  background: #E9ECEF;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .account .tabcontent .orders-part img {
+    max-width: 100% !important;
+    min-width: 100% !important;
+    margin-bottom: 1rem;
+  }
+}
+
+.account .tabcontent .orders-part .order-title a {
+  color: #000;
+  text-decoration: none;
+}
+
+.account .tabcontent .orders-part .order-title a:hover {
+  color: #01A4EA;
+  text-decoration: underline;
+}
+
+.account .tabcontent .orders-part .order-title p {
+  font-size: 12px;
+}
+
+.account .tabcontent .orders-part .order-price h4 {
+  color: #01A4EA;
+  font-size: 16px;
+}
+
+.account .tabcontent .orders-part .order-price p {
+  font-size: 24px;
+}
+
+.account .tabcontent .orders-part .order-avail h4 {
+  color: #01A4EA;
+  font-size: 16px;
+}
+
+.account .tabcontent .orders-part .order-avail input {
+  width: 100%;
+  padding: .3rem 0;
+  border: 1px solid  #afb4b8;
+  border-radius: 5px;
+}
+
+.account .tabcontent .orders-part .order-avail input:focus {
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(1, 164, 234, 0.5);
+          box-shadow: 0px 0px 5px 1px rgba(1, 164, 234, 0.5);
+  outline: none;
+}
+
+.account .tabcontent .orders-part .order-submit a {
+  color: #fff;
+  background: #01A4EA;
+  text-decoration: none;
+  padding: 0 1rem;
+  border-radius: 5px;
+}
+
+.account hr:last-of-type {
+  display: none;
+}
+
+.account .pagination .page-link {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  width: 35px;
+  height: 35px;
+  padding-top: .2rem;
+}
+
+.account .pagination .page-link:focus {
+  border: 2px solid #01A4EA;
+  border-radius: 50%;
+}
+
+.account [aria-label="Next"], .account [aria-label="Previous"] {
+  border: none !important;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #fff !important;
+  font-family: cairo bo;
+  border-top: 0.25rem solid #01A4EA !important;
 }

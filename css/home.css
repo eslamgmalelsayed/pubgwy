@@ -62,7 +62,7 @@ html {
 }
 
 .animated-icon1 span:nth-child(1) {
-  top: 0px;
+  top: 2px;
 }
 
 .animated-icon1 span:nth-child(2) {
@@ -70,7 +70,7 @@ html {
 }
 
 .animated-icon1 span:nth-child(3) {
-  top: 20px;
+  top: 17px;
 }
 
 .animated-icon1.open span:nth-child(1) {
@@ -92,54 +92,21 @@ html {
 
 .discount-badge {
   position: absolute;
-  top: -6px;
-  right: 8px;
-  color: #fff;
-  font-weight: bold;
-}
-
-.discount-badge span {
-  position: relative;
-  display: block;
+  width: 47px;
+  height: 47px;
+  background: red;
+  top: 0;
+  right: 3%;
   text-align: center;
-  background: #F8463F;
-  font-size: 14px;
-  line-height: 1;
-  padding: 8px 8px 8px;
-  border-top-right-radius: 8px;
-  width: 45px;
+  -webkit-clip-path: polygon(100% 0%, 98% 70%, 50% 100%, 0 70%, 0 0, 45% 0);
+          clip-path: polygon(100% 0%, 98% 70%, 50% 100%, 0 70%, 0 0, 45% 0);
+  z-index: 999;
 }
 
-.discount-badge:after {
-  position: absolute;
-  content: "";
-  width: 0;
-  height: 0;
-  border-left: 20px solid transparent;
-  border-right: 45px solid transparent;
-  border-top: 10px solid #F8463F;
-}
-
-.discount-badge span:before, .discount-badge span:after {
-  position: absolute;
-  content: "";
-}
-
-.discount-badge span:before {
-  height: 6px;
-  width: 6px;
-  left: -6px;
-  top: 0;
-  background: #F8463F;
-}
-
-.discount-badge span:after {
-  height: 6px;
-  width: 8px;
-  left: -8px;
-  top: 0;
-  border-radius: 8px 8px 0 0;
-  background: #C02031;
+.discount-badge i {
+  border: 1px dotted #fff;
+  padding: .2rem;
+  color: #fff;
 }
 
 .top-bar {
@@ -157,6 +124,12 @@ html {
 
 .top-bar .container a:hover {
   text-decoration: underline;
+}
+
+@media (min-width: 320px) and (max-width: 426px) {
+  .top-bar .container a {
+    font-size: 7px;
+  }
 }
 
 .top-bar .container .last-link {
@@ -243,20 +216,11 @@ html {
 
 .pages-bar {
   background: #fff;
-  height: 5vh;
-}
-
-.pages-bar ul {
-  -webkit-box-shadow: 0px 26px 82px 3px rgba(255, 255, 255, 0.59);
-          box-shadow: 0px 26px 82px 3px rgba(255, 255, 255, 0.59);
-}
-
-.pages-bar ul li {
-  padding-top: .1rem;
+  -webkit-box-shadow: 0px 3px 9px 4px rgba(165, 153, 153, 0.25);
+          box-shadow: 0px 3px 9px 4px rgba(165, 153, 153, 0.25);
 }
 
 .pages-bar ul li:hover {
-  border-bottom: 3px solid #01A4EA;
   background: #F8F9FA;
 }
 
@@ -265,8 +229,8 @@ html {
   font-family: cairo bo;
   font-size: 12px;
   text-decoration: none;
-  padding: .4rem 1.5rem !important;
-  border-left: 1px solid #0000001a;
+  padding: .6rem 1.5rem !important;
+  border-left: 1px solid #f0eded;
 }
 
 .pages-bar ul li a:hover, .pages-bar ul li a:focus {
@@ -284,6 +248,11 @@ html {
   z-index: 999;
 }
 
+.pages-bar .dropdown-menu a {
+  font-family: cairo li;
+  font-weight: bold;
+}
+
 .pages-bar .dropdown-menu li {
   padding-top: 0 !important;
   border-bottom: 1px solid #0000001a;
@@ -299,6 +268,8 @@ html {
 
 .pages-bar .dropdown:hover .dropdown-menu {
   display: block !important;
+  -webkit-box-shadow: 0px 6px 82px 3px rgba(255, 255, 255, 0.7);
+          box-shadow: 0px 6px 82px 3px rgba(255, 255, 255, 0.7);
 }
 
 .mobile-nav-links a {
@@ -455,6 +426,7 @@ footer .banks-logos p {
      object-fit: contain;
   -o-object-position: center;
      object-position: center;
+  border-radius: 5px;
 }
 
 .header-gallery .header-banner .carousel-indicators [data-bs-target] {
@@ -467,13 +439,19 @@ footer .banks-logos p {
   background-color: #01A4EA !important;
 }
 
+.header-gallery .header-banner .carousel-item {
+  -webkit-transition: ease-out .5s;
+  transition: ease-out .5s;
+}
+
 .header-gallery .cards-wrapper .card {
   position: relative;
 }
 
 .header-gallery .cards-wrapper .card .card-body .card-title {
   color: #000;
-  font-family: cairo bo;
+  font-weight: bold;
+  font-size: 18.4px;
   display: block;
   text-decoration: none;
   text-overflow: ellipsis;
@@ -524,6 +502,7 @@ footer .banks-logos p {
      object-fit: contain;
   -o-object-position: center;
      object-position: center;
+  border-radius: 5px;
 }
 
 .header-gallery .offers h1, .header-gallery .offers p {
@@ -573,7 +552,8 @@ footer .banks-logos p {
 
 .header-gallery .offers .card .card-title {
   color: #000;
-  font-family: cairo bo;
+  font-weight: bold;
+  font-size: 18.4px;
   display: block;
   text-decoration: none;
 }
@@ -619,6 +599,7 @@ footer .banks-logos p {
      object-fit: contain;
   -o-object-position: center;
      object-position: center;
+  border-radius: 5px;
 }
 
 .header-gallery .opportunities {
@@ -639,6 +620,7 @@ footer .banks-logos p {
      object-position: center;
   -o-object-fit: contain;
      object-fit: contain;
+  border-radius: 0;
 }
 
 .header-gallery .blog .card .top-right {

@@ -42,7 +42,7 @@
         left: 0;
         background-color: #fff;
         transition: all 0.3s;
-        z-index: 1090;
+        z-index: 1000;
         text-align: center;
     }
 }
