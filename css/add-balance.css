@@ -403,3 +403,71 @@ footer .contact-part .follow-us i {
 footer .banks-logos p {
   color: #6c757d;
 }
+
+.add-balance {
+  background: #F3F3F3;
+}
+
+.add-balance .container .pages-index {
+  text-align: start;
+}
+
+.add-balance .container .pages-index a {
+  color: #01A4EA;
+  text-decoration: none;
+  border: 1px solid #01A4EA;
+  text-align: right;
+  border-radius: 5px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  padding: .1rem .4rem;
+}
+
+.add-balance .container .pages-index a:hover {
+  text-decoration: underline;
+  color: #016f9e;
+}
+
+.add-balance .container .pages-index .page-index {
+  background: #01A4EA;
+  padding: .1rem .6rem;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.add-balance .container .main button {
+  border: 1px solid #6c757d;
+  background: #fff;
+  color: #6c757d;
+  font-weight: bold;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin: .3rem;
+  padding: .8rem;
+  border-radius: 5px;
+}
+
+.add-balance .container .main button:focus {
+  color: #01A4EA;
+  border: 1px solid #01A4EA;
+}
+
+.add-balance .container .main .card {
+  -webkit-box-shadow: 0px 0px 6px -1px rgba(172, 150, 150, 0.3);
+          box-shadow: 0px 0px 6px -1px rgba(172, 150, 150, 0.3);
+  border-radius: 5px;
+}
+
+.add-balance .container .main .card img {
+  padding: .5rem 2rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.add-balance .container .main .card p {
+  font-size: 12px;
+  color: #6c757d;
+  margin: 0;
+}

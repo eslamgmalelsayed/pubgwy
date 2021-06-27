@@ -2,3 +2,61 @@
 @import 'base';
 @import 'hamburger';
 @import 'nav-footer-style';
+.add-balance{
+    background: $section-color;
+    .container{
+        .pages-index{
+                text-align: start;
+                a{
+                    color: $main-color;
+                    text-decoration: none;
+                    border: 1px solid $main-color;
+                    text-align: right;
+                    border-radius: $border-radius;
+                    transition: .3s;
+                    padding: .1rem .4rem;
+                    &:hover{
+                        text-decoration: underline;
+                        color: #016f9e;
+                    }
+               }
+               .page-index{
+                   background: $main-color;
+                   padding: .1rem .6rem;
+                   color: #fff;
+                   border-radius: $border-radius;
+               }
+        }
+        .main{
+            button{
+                border:1px solid #6c757d;
+                background: #fff;
+                color: #6c757d;
+                font-weight: bold;
+                box-shadow: none;
+                margin: .3rem;
+                padding: .8rem;
+                border-radius: $border-radius;
+                &:focus{
+                    color: $main-color;
+                    border: 1px solid $main-color;
+                }
+            }
+            .card{
+                box-shadow: 0px 0px 6px -1px rgba(172,150,150,0.30);
+                border-radius: $border-radius;
+                img{
+                    padding: .5rem 2rem;
+                    object-fit: contain;
+                    object-position: center;
+                }
+                p{
+                    font-size: 12px;
+                    color: #6c757d;
+                    margin: 0;
+                }
+            }
+        }
+
+    }
+}
