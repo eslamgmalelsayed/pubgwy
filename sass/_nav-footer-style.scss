@@ -127,6 +127,9 @@
         a{
             font-family: cairo li;
             font-weight: bold;
+            &:active,&:hover{
+                background: #F8F9FA !important;
+            }
         }
         li{
             padding-top: 0 !important;
@@ -179,6 +182,9 @@
             font-weight: bold;
             &:hover{
                 color: $main-color !important;
+        }
+        &:active,&:hover{
+            background: #F8F9FA !important;
         }
         }
 

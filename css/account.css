@@ -234,6 +234,10 @@ html {
   font-weight: bold;
 }
 
+.pages-bar .dropdown-menu a:active, .pages-bar .dropdown-menu a:hover {
+  background: #F8F9FA !important;
+}
+
 .pages-bar .dropdown-menu li {
   padding-top: 0 !important;
   border-bottom: 1px solid #0000001a;
@@ -294,6 +298,10 @@ html {
 
 .mobile-nav-links .dropdown-menu a:hover {
   color: #01A4EA !important;
+}
+
+.mobile-nav-links .dropdown-menu a:active, .mobile-nav-links .dropdown-menu a:hover {
+  background: #F8F9FA !important;
 }
 
 .mobile-nav-links .dropdown-menu li {
