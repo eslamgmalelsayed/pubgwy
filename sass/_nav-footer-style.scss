@@ -101,7 +101,7 @@
     ul{
         li{
             &:hover{
-                background: #F8F9FA;
+                background: $list-hover;
             }
             a{
                 color: $links-color;
@@ -109,7 +109,7 @@
                 font-size: 12px;
                 text-decoration: none;
                 padding: .6rem 1.5rem !important;
-                border-left: 1px solid rgb(240, 237, 237);
+                border-left: 1px solid $hr-color;
                 &:hover,&:focus{
                     color: $main-color;
                 }
@@ -128,7 +128,7 @@
             font-family: cairo li;
             font-weight: bold;
             &:active,&:hover{
-                background: #F8F9FA !important;
+                background: $list-hover !important;
             }
         }
         li{
@@ -184,7 +184,7 @@
                 color: $main-color !important;
         }
         &:active,&:hover{
-            background: #F8F9FA !important;
+            background: $list-hover !important;
         }
         }
 

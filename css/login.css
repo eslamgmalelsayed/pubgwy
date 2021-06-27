@@ -404,70 +404,114 @@ footer .banks-logos p {
   color: #6c757d;
 }
 
-.add-balance {
+.login {
   background: #F3F3F3;
 }
 
-.add-balance .container .pages-index {
-  text-align: start;
+.login .container {
+  background: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 5px 6px -1px rgba(172, 150, 150, 0.3);
+          box-shadow: 0px 5px 6px -1px rgba(172, 150, 150, 0.3);
 }
 
-.add-balance .container .pages-index a {
+.login .container .login-form {
+  border-left: 1px solid #ced4da;
+}
+
+@media (min-width: 320px) and (max-width: 1200px) {
+  .login .container .login-form {
+    border-left: none;
+  }
+}
+
+.login .container .login-form h1 {
+  color: #6c757d;
+  font-size: 24px;
+}
+
+.login .container .login-form p {
+  color: #6c757d;
+  font-size: 16px;
+  padding: 1rem 0;
+}
+
+.login .container .login-form p a {
   color: #01A4EA;
   text-decoration: none;
-  border: 1px solid #01A4EA;
-  text-align: right;
-  border-radius: 5px;
-  -webkit-transition: .3s;
-  transition: .3s;
-  padding: .1rem .4rem;
 }
 
-.add-balance .container .pages-index a:hover {
+.login .container .login-form p a:hover {
   text-decoration: underline;
   color: #016f9e;
 }
 
-.add-balance .container .pages-index .page-index {
-  background: #01A4EA;
-  padding: .1rem .6rem;
-  color: #fff;
+.login .container .login-form input {
+  width: 100%;
+  margin: .7rem 0;
   border-radius: 5px;
+  border: 1px solid #ced4da;
+  padding: .5rem;
+  outline: none;
 }
 
-.add-balance .container .main button {
-  border: 1px solid #6c757d;
-  background: #fff;
-  color: #6c757d;
-  font-weight: bold;
+.login .container .login-form input:focus {
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(1, 164, 234, 0.5);
+          box-shadow: 0px 0px 5px 1px rgba(1, 164, 234, 0.5);
+}
+
+.login .container .login-form .input-last {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.login .container .login-form .input-last input {
+  width: auto;
+}
+
+.login .container .login-form .input-last .form-check-input {
+  border: 3px solid #01A4EA;
   -webkit-box-shadow: none;
           box-shadow: none;
-  margin: .3rem;
-  padding: .8rem;
-  border-radius: 5px;
 }
 
-.add-balance .container .main button:focus {
+.login .container .login-form .input-last .submit-btn {
+  background: #01A4EA;
+  color: #fff;
+  border-radius: 5px;
+  padding: .4rem;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.login .container .adv .circle {
+  width: 75px;
+  height: 75px;
+  background: #fff;
+  border: 2px solid #01A4EA;
+  text-align: center;
+  border-radius: 50%;
+  font-weight: bold;
   color: #01A4EA;
-  border: 1px solid #01A4EA;
+  font-size: 45px;
 }
 
-.add-balance .container .main .card {
-  -webkit-box-shadow: 0px 0px 6px -1px rgba(172, 150, 150, 0.3);
-          box-shadow: 0px 0px 6px -1px rgba(172, 150, 150, 0.3);
-  border-radius: 5px;
+@media (min-width: 320px) and (max-width: 515px) {
+  .login .container .adv .circle {
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+  }
 }
 
-.add-balance .container .main .card img {
-  padding: .5rem 2rem;
-  -o-object-fit: contain;
-     object-fit: contain;
-  -o-object-position: center;
-     object-position: center;
+.login .container .adv .adv-text h1 {
+  font-size: 24px;
+  color: #01A4EA;
 }
 
-.add-balance .container .main .card p {
-  font-size: 12px;
+.login .container .adv .adv-text p {
   color: #6c757d;
-  margin: 0;
+  font-size: 16px;
 }
