@@ -44,7 +44,7 @@
                 padding: .5rem;
                 outline: none;
                 &:focus{
-                    box-shadow: 0px 0px 5px 1px rgba(1, 164, 234,.50);
+                    box-shadow: $box-shadow;
                 }
             }
             .input-last{

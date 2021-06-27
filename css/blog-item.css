@@ -404,358 +404,223 @@ footer .banks-logos p {
   color: #6c757d;
 }
 
-header img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+.blog-item .container {
+  text-align: start;
 }
 
-.account {
-  background: #F3F3F3;
-  margin-top: -2.5rem;
-}
-
-.account .personal-part {
-  background: #fff;
-  border-radius: 5px;
-  -webkit-box-shadow: 0px 3px 9px 4px rgba(165, 153, 153, 0.25);
-          box-shadow: 0px 3px 9px 4px rgba(165, 153, 153, 0.25);
-}
-
-.account .personal-part img {
-  width: 100px;
-}
-
-.account .personal-part h5 i {
-  width: 25px;
-  height: 25px;
-  color: #28a745;
-  border: 2px solid #28a745;
-  padding: 1px;
-  border-radius: 50%;
-}
-
-.account .personal-part p {
-  font-size: 12.8px;
-  color: #28a745;
-}
-
-.account .personal-part .multicolored {
-  height: 4px;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 0, 0, 0.879925)), color-stop(31%, #dddb1e), color-stop(62%, #f3fd0f), to(#10a848));
-  background: linear-gradient(90deg, rgba(255, 0, 0, 0.879925) 0%, #dddb1e 31%, #f3fd0f 62%, #10a848 100%);
-}
-
-.account .personal-part .contact-me i {
-  font-size: 35px;
+.blog-item .container a {
   color: #01A4EA;
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .account .personal-part .contact-me i {
-    font-size: 25px;
-  }
-}
-
-.account .personal-part .modal-part .subscribe-btn {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: .2rem 3rem;
-  background: #fff;
-  color: #6c757d;
+  text-decoration: none;
+  border: 1px solid #01A4EA;
+  text-align: right;
   border-radius: 5px;
-  border: none;
-  -webkit-box-shadow: 0px 0px 9px 4px rgba(165, 153, 153, 0.35);
-          box-shadow: 0px 0px 9px 4px rgba(165, 153, 153, 0.35);
+  -webkit-transition: .3s;
+  transition: .3s;
+  padding: .1rem .4rem;
 }
 
-.account .personal-part .modal-part .subscribe-btn:hover {
-  background: #6c757d;
-  color: #fff;
+.blog-item .container a:hover {
+  text-decoration: underline;
+  color: #016f9e;
 }
 
-.account .personal-part .modal-part .subscribe-btn i {
-  color: inherit;
-}
-
-.account .personal-part .modal-part .modal-title {
-  font-family: cairo bo;
-}
-
-.account .personal-part .modal-part .modal-body a {
-  color: #fff;
-  padding: .2rem .5rem;
-}
-
-.account .personal-part .stats h6 {
-  font-weight: bold;
-}
-
-.account .personal-part .stats p {
-  font-size: 14px;
-}
-
-.account .personal-part .reviews .stars {
-  font-size: 9px;
-  padding: 0;
-  color: #01A4EA;
-}
-
-.account .personal-part .reviews .stars i {
-  margin: 0 -.1rem;
-}
-
-.account .personal-part .reviews .progress-bars {
-  width: 15px;
-}
-
-.account .personal-part .reviews .progress-bars .progress {
-  height: 6px;
-  border: 1px solid #d3cece;
-}
-
-.account .personal-part .reviews .progress-bars .progress .progress-bar {
+.blog-item .container .page-index {
   background: #01A4EA;
+  padding: .1rem .6rem;
+  color: #fff;
+  border-radius: 5px;
 }
 
-.account .personal-part .reviews .degree span {
-  color: #01A4EA;
-  font-size: 10px;
-  font-weight: bold;
-  display: block;
+.blog-item {
+  background: #F3F3F3;
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-  .account .personal-part .reviews .degree span {
-    font-size: .7vw;
-  }
-}
-
-.account .personal-part .reviews .percentage {
-  font-size: 9px;
-}
-
-.account .personal-part .reviews .percentage span {
-  display: block;
-}
-
-.account .personal-part .reviews .average {
-  font-size: 12px;
-}
-
-.account .personal-part .reviews .average .stars {
-  font-size: 15px;
-}
-
-@media (min-width: 768px) and (max-width: 1200px) {
-  .account .personal-part .reviews .average .stars {
-    font-size: 8px;
-  }
-}
-
-.account .personal-part .reviews .average h5 {
-  font-weight: bold;
-  font-size: 25px;
-  color: #01A4EA;
-}
-
-@media (min-width: 320px) and (max-width: 767px) {
-  .account .tabs-part {
-    margin-top: 3rem;
-  }
-}
-
-.account .tabs-part .active {
-  border-top: 0.25rem solid #01A4EA !important;
-  font-family: cairo bo;
-}
-
-.account .tabs-part .tablink {
-  border: none;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 12px 10px;
-  border-radius: 5px 5px 0 0;
-  margin: 0 .2rem;
-  background: #F8F9FA;
-  font-weight: bold;
-  font-size: 16px;
-}
-
-@media (min-width: 320px) and (max-width: 445px) {
-  .account .tabs-part .tablink {
-    font-size: 11px;
-    padding: 12px 5px;
-  }
-}
-
-.account .tabs-part .for-border {
-  border-radius: 5px 5px 0 0;
-}
-
-.account .tabcontent {
+.blog-item .main-container .item-show {
   background: #fff;
-  border-radius: 5px 0 5px 5px;
-  -webkit-box-shadow: 0px 3px 9px 4px rgba(165, 153, 153, 0.25);
-          box-shadow: 0px 3px 9px 4px rgba(165, 153, 153, 0.25);
+  -webkit-box-shadow: 0px 5px 6px -1px rgba(172, 150, 150, 0.3);
+          box-shadow: 0px 5px 6px -1px rgba(172, 150, 150, 0.3);
 }
 
-.account .tabcontent h4 {
-  color: #6c757d;
+.blog-item .main-container .item-show .game-img .item-img {
+  position: relative;
 }
 
-.account .tabcontent .filter-part .form-control {
-  width: 90%;
+.blog-item .main-container .item-show .game-img .item-img span {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: #28a745;
+  text-align: center;
+  padding: .1rem .4rem;
   border-radius: 5px;
-  border: 1px solid #e6e0e0;
+  color: #fff;
+  font-size: 13px;
 }
 
-.account .tabcontent .filter-part .form-control:focus {
-  -webkit-box-shadow: 0px 0px 5px 1px rgba(1, 164, 234, 0.5);
-          box-shadow: 0px 0px 5px 1px rgba(1, 164, 234, 0.5);
-}
-
-.account .tabcontent .filter-part .btn-default {
-  margin-right: -2.5rem;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  color: #01A4EA;
-  z-index: 99;
-}
-
-.account .tabcontent .first-select select {
-  width: 90%;
-  border-radius: 5px;
-  border: 1px solid #e6e0e0;
-}
-
-.account .tabcontent .first-select select:focus {
-  -webkit-box-shadow: 0px 0px 5px 1px rgba(1, 164, 234, 0.5);
-          box-shadow: 0px 0px 5px 1px rgba(1, 164, 234, 0.5);
-}
-
-@media (min-width: 320px) and (max-width: 768px) {
-  .account .tabcontent .first-select select {
-    width: 100%;
-    margin: .7rem 0;
-  }
-}
-
-.account .tabcontent .second-select select {
-  width: 60%;
-  border-radius: 5px;
-  border: 1px solid #e6e0e0;
-}
-
-.account .tabcontent .second-select select:focus {
-  -webkit-box-shadow: 0px 0px 5px 1px rgba(1, 164, 234, 0.5);
-          box-shadow: 0px 0px 5px 1px rgba(1, 164, 234, 0.5);
-}
-
-.account .tabcontent select {
-  color: #6c757d;
-  outline: none;
-}
-
-.account .tabcontent .orders-part img {
-  max-width: 100px;
-  min-width: 100px;
+.blog-item .main-container .item-show .game-img .item-img img {
   -o-object-fit: contain;
      object-fit: contain;
   -o-object-position: center;
      object-position: center;
-  background: #E9ECEF;
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
-  .account .tabcontent .orders-part img {
-    max-width: 100% !important;
-    min-width: 100% !important;
-    margin-bottom: 1rem;
+.blog-item .main-container .item-show .game-img .item-desc p {
+  color: #6c757d;
+}
+
+.blog-item .main-container .item-show .game-img .item-desc p img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+  max-height: 30px;
+  min-height: 30px;
+  max-width: 40px;
+  min-width: 40px;
+  float: left;
+}
+
+.blog-item .main-container .item-show .game-img .item-info p {
+  font-size: 13px;
+}
+
+.blog-item .main-container .item-show .game-img .item-info i {
+  color: #01A4EA;
+}
+
+@media (min-width: 320px) and (max-width: 1200px) {
+  .blog-item .main-container .item-show .game-info {
+    border-top: 1px solid #0000001a;
+    margin-top: 1rem;
+    padding: 1rem;
   }
 }
 
-.account .tabcontent .orders-part .order-title a {
-  color: #000;
-  text-decoration: none;
-}
-
-.account .tabcontent .orders-part .order-title a:hover {
-  color: #01A4EA;
-  text-decoration: underline;
-}
-
-.account .tabcontent .orders-part .order-title p {
-  font-size: 12px;
-}
-
-.account .tabcontent .orders-part .order-price h4 {
-  color: #01A4EA;
-  font-size: 16px;
-}
-
-.account .tabcontent .orders-part .order-price p {
+.blog-item .main-container .item-show .game-info .game-name {
   font-size: 24px;
+  font-weight: bold;
 }
 
-.account .tabcontent .orders-part .order-avail h4 {
+.blog-item .main-container .item-show .game-info .game-desc {
+  font-size: 18px;
+  color: #dc3545;
+  font-weight: bold;
+  margin: .4rem 0;
+}
+
+.blog-item .main-container .item-show .game-info .ad-no {
   color: #01A4EA;
+  font-weight: bold;
+  margin: 0;
+}
+
+.blog-item .main-container .item-show .game-info .real-price {
   font-size: 16px;
+  color: #dc3545;
+  text-decoration: line-through;
+  margin: .2rem 0;
 }
 
-.account .tabcontent .orders-part .order-avail input {
-  width: 100%;
-  padding: .3rem 0;
-  border: 1px solid  #afb4b8;
+.blog-item .main-container .item-show .game-info .price-discount {
+  font-size: 24px;
+  color: #000;
+  font-weight: bold;
+  margin: .3rem 0;
+}
+
+.blog-item .main-container .item-show .game-info .action input {
+  width: 15%;
+  text-align: center;
+  border: 1px solid #0000001a;
   border-radius: 5px;
-}
-
-.account .tabcontent .orders-part .order-avail input:focus {
-  -webkit-box-shadow: 0px 0px 5px 1px rgba(1, 164, 234, 0.5);
-          box-shadow: 0px 0px 5px 1px rgba(1, 164, 234, 0.5);
+  padding: .2rem 0;
   outline: none;
 }
 
-.account .tabcontent .orders-part .order-submit a {
+.blog-item .main-container .item-show .game-info .action input:focus {
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(1, 164, 234, 0.5);
+          box-shadow: 0px 0px 5px 1px rgba(1, 164, 234, 0.5);
+}
+
+.blog-item .main-container .item-show .game-info .action span {
+  font-size: 13px;
+}
+
+.blog-item .main-container .item-show .game-info .action span i {
+  color: #01A4EA;
+  font-size: 20px;
+}
+
+.blog-item .main-container .item-show .game-info .action a {
   color: #fff;
   background: #01A4EA;
+  border-radius: 0px 0px 5px 1px rgba(1, 164, 234, 0.5);
+  padding: .3rem 1.5rem;
+  text-align: center;
   text-decoration: none;
-  padding: 0 1rem;
+}
+
+.blog-item .main-container .item-show .game-info .last-p {
+  font-size: 12px;
+  color: #6c757d;
+  font-weight: bold;
+}
+
+.blog-item .main-container .item-show .game-review img {
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.blog-item .main-container .item-show .game-review h1 {
+  font-size: 18px;
+  color: #6c757d;
+}
+
+.blog-item .main-container .item-show .game-review h1:hover {
+  color: #016f9e;
+  cursor: pointer;
+}
+
+.blog-item .main-container .item-show .game-review .multicolored {
+  position: relative;
+  margin: auto;
+  width: 70%;
+  height: 6px;
   border-radius: 5px;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 0, 0, 0.879925)), color-stop(31%, #dddb1e), color-stop(62%, #f3fd0f), to(#10a848));
+  background: linear-gradient(90deg, rgba(255, 0, 0, 0.879925) 0%, #dddb1e 31%, #f3fd0f 62%, #10a848 100%);
 }
 
-.account hr:last-of-type {
-  display: none;
+.blog-item .main-container .item-show .game-review .multicolored::before {
+  position: absolute;
+  content: '100%';
+  font-size: 12px;
+  top: -6px;
+  left: -30px;
+  color: #000;
 }
 
-.account .pagination .page-link {
-  border: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  width: 35px;
-  height: 35px;
-  padding-top: .2rem;
+.blog-item .main-container .item-show .game-review .multicolored::after {
+  position: absolute;
+  content: '';
+  background: url(../img/game-logo.png) no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 60px;
+  height: 60px;
+  font-size: 12px;
+  top: -30px;
+  right: -60px;
+  color: #000;
 }
 
-.account .pagination .page-link:focus {
-  border: 2px solid #01A4EA;
-  border-radius: 50%;
+.blog-item .main-container .item-show .game-review p {
+  color: #01A4EA;
+  font-size: 13.5px;
 }
 
-.account [aria-label="Next"], .account [aria-label="Previous"] {
-  border: none !important;
-}
-
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color: #fff !important;
-  font-family: cairo bo;
-  border-top: 0.25rem solid #01A4EA !important;
-}
-
-.order-review .col-2 {
-  margin: -.35rem;
+.blog-item .main-container .item-show .game-review h2 {
+  font-size: 16px;
 }

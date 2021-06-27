@@ -1,0 +1,22 @@
+%pages-index{
+    text-align: start;
+    a{
+        color: $main-color;
+        text-decoration: none;
+        border: 1px solid $main-color;
+        text-align: right;
+        border-radius: $border-radius;
+        transition: .3s;
+        padding: .1rem .4rem;
+        &:hover{
+            text-decoration: underline;
+            color: #016f9e;
+        }
+   }
+   .page-index{
+       background: $main-color;
+       padding: .1rem .6rem;
+       color: #fff;
+       border-radius: $border-radius;
+   }
+}
