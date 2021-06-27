@@ -230,7 +230,7 @@ html {
   font-size: 12px;
   text-decoration: none;
   padding: .6rem 1.5rem !important;
-  border-left: 1px solid #ced4da;
+  border-left: 1px solid #f6efef;
 }
 
 .pages-bar ul li a:hover, .pages-bar ul li a:focus {
