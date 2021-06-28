@@ -1,17 +1,17 @@
 .discount-badge{
   position: absolute;
-  width: 47px;
-  height: 47px;
-  background: #E30613;
-  top: 0;
-  right: 3%;
-  text-align: center;
-  clip-path: polygon(100% 0%, 98% 70%, 50% 100%, 0 70%, 0 0, 45% 0);
-  z-index: 999;
-  i{
-    border: 1px dotted #fff;
-    padding: .2rem;
-    color: #fff;
-  }
- 
+  content: '';
+  top: -5.8px;
+  right: 6px;
+  width: 55px;
+  height: 55px;
+  background-position: center;
+  background: url('https://www.gamesatis.com/assets/icons/salesale-d999fd6103def214a04a0339f8b44d481e28a0018a7a3120f9dc50d41003ca3c.svg') no-repeat;
+}
+.discount-value{
+  position: absolute;
+  top: -3px;
+  right: 16px;
+  color: #fff !important;
+  z-index: 99;
 }

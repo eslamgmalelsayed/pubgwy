@@ -404,11 +404,11 @@ footer .banks-logos p {
   color: #6c757d;
 }
 
-.blog-item .container {
+.blog-item .secondary-container {
   text-align: start;
 }
 
-.blog-item .container a {
+.blog-item .secondary-container a {
   color: #01A4EA;
   text-decoration: none;
   border: 1px solid #01A4EA;
@@ -419,16 +419,88 @@ footer .banks-logos p {
   padding: .1rem .4rem;
 }
 
-.blog-item .container a:hover {
+.blog-item .secondary-container a:hover {
   text-decoration: underline;
   color: #016f9e;
 }
 
-.blog-item .container .page-index {
+.blog-item .secondary-container .page-index {
   background: #01A4EA;
   padding: .1rem .6rem;
   color: #fff;
   border-radius: 5px;
+}
+
+.discount-badge {
+  position: absolute;
+  content: '';
+  top: -5.8px;
+  right: 6px;
+  width: 55px;
+  height: 55px;
+  background-position: center;
+  background: url("https://www.gamesatis.com/assets/icons/salesale-d999fd6103def214a04a0339f8b44d481e28a0018a7a3120f9dc50d41003ca3c.svg") no-repeat;
+}
+
+.discount-value {
+  position: absolute;
+  top: -3px;
+  right: 16px;
+  color: #fff !important;
+  z-index: 99;
+}
+
+.blog-item .cards .card {
+  position: relative;
+}
+
+.blog-item .cards .card .card-body .card-title {
+  color: #000;
+  font-weight: bold;
+  font-size: 18.4px;
+  display: block;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.blog-item .cards .card .card-body .card-title:hover {
+  text-decoration: underline;
+  color: #01A4EA;
+}
+
+.blog-item .cards .card .card-body .card-desc {
+  color: #dc3545;
+  font-family: cairo bo;
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.blog-item .cards .card .card-body .card-desc:hover {
+  text-decoration: underline;
+  color: #a71d2a;
+}
+
+.blog-item .cards .card .card-body .card-price {
+  color: #dc3545;
+  text-decoration: line-through;
+}
+
+.blog-item .cards .card .card-body .card-discount {
+  color: #6c757d;
+}
+
+.blog-item .cards .card .card-body .buy-link {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 5px;
+  background: #01A4EA;
+  padding: .1rem .3rem;
+  color: #fff;
+  text-decoration: none;
 }
 
 .blog-item {
@@ -623,4 +695,117 @@ footer .banks-logos p {
 
 .blog-item .main-container .item-show .game-review h2 {
   font-size: 16px;
+}
+
+.blog-item .cards h1 {
+  font-size: 20px;
+  color: #6c757d;
+}
+
+.blog-item .comments {
+  background: #fff;
+  -webkit-box-shadow: 0px 5px 6px -1px rgba(172, 150, 150, 0.3);
+          box-shadow: 0px 5px 6px -1px rgba(172, 150, 150, 0.3);
+  border-radius: #0000001a;
+  width: 92%;
+}
+
+.blog-item .comments .reviews img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.blog-item .comments .reviews .table-part .stars {
+  color: #01A4EA;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: .33rem;
+  font-size: 12px;
+}
+
+@media (min-width: 320px) and (max-width: 991px) {
+  .blog-item .comments .reviews .table-part .stars {
+    font-size: 6px;
+  }
+}
+
+.blog-item .comments .reviews .table-part .rev {
+  color: #01A4EA;
+  font-size: 12px;
+  text-align: start;
+  padding-left: .2rem;
+}
+
+@media (min-width: 320px) and (max-width: 991px) {
+  .blog-item .comments .reviews .table-part .rev {
+    font-size: 7px;
+  }
+}
+
+.blog-item .comments .reviews .table-part .progress-control {
+  width: 50%;
+}
+
+@media (min-width: 320px) and (max-width: 991px) {
+  .blog-item .comments .reviews .table-part .progress-control {
+    width: 28%;
+  }
+}
+
+.blog-item .comments .reviews .table-part .progress-control .progress {
+  height: 14px;
+  background: #e9ecef;
+}
+
+@media (min-width: 320px) and (max-width: 991px) {
+  .blog-item .comments .reviews .table-part .progress-control .progress {
+    height: 7px;
+  }
+}
+
+.blog-item .comments .reviews .table-part .progress-control .progress .progress-bar {
+  background-color: #01A4EA;
+}
+
+.blog-item .comments .reviews .table-part .ps-3 {
+  font-size: 10px;
+}
+
+.blog-item .comments .last-average p {
+  font-size: 16px;
+  margin-bottom: .5rem;
+}
+
+.blog-item .comments .last-average span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #01A4EA;
+  font-size: 10px;
+}
+
+.blog-item .comments .last-average h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #01A4EA;
+}
+
+.blog-item .comments h4 {
+  color: #6c757d;
+  font-size: 24px;
+}
+
+.blog-item .comments .comments-part {
+  border-radius: #0000001a;
+  background: #F3F3F3;
+  font-size: 12px;
 }

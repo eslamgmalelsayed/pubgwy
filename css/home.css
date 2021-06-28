@@ -92,21 +92,21 @@ html {
 
 .discount-badge {
   position: absolute;
-  width: 47px;
-  height: 47px;
-  background: #E30613;
-  top: 0;
-  right: 3%;
-  text-align: center;
-  -webkit-clip-path: polygon(100% 0%, 98% 70%, 50% 100%, 0 70%, 0 0, 45% 0);
-          clip-path: polygon(100% 0%, 98% 70%, 50% 100%, 0 70%, 0 0, 45% 0);
-  z-index: 999;
+  content: '';
+  top: -5.8px;
+  right: 6px;
+  width: 55px;
+  height: 55px;
+  background-position: center;
+  background: url("https://www.gamesatis.com/assets/icons/salesale-d999fd6103def214a04a0339f8b44d481e28a0018a7a3120f9dc50d41003ca3c.svg") no-repeat;
 }
 
-.discount-badge i {
-  border: 1px dotted #fff;
-  padding: .2rem;
-  color: #fff;
+.discount-value {
+  position: absolute;
+  top: -3px;
+  right: 16px;
+  color: #fff !important;
+  z-index: 99;
 }
 
 .top-bar {
@@ -423,6 +423,59 @@ footer .banks-logos p {
   color: #6c757d;
 }
 
+.header-gallery .card {
+  position: relative;
+}
+
+.header-gallery .card .card-body .card-title {
+  color: #000;
+  font-weight: bold;
+  font-size: 18.4px;
+  display: block;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.header-gallery .card .card-body .card-title:hover {
+  text-decoration: underline;
+  color: #01A4EA;
+}
+
+.header-gallery .card .card-body .card-desc {
+  color: #dc3545;
+  font-family: cairo bo;
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.header-gallery .card .card-body .card-desc:hover {
+  text-decoration: underline;
+  color: #a71d2a;
+}
+
+.header-gallery .card .card-body .card-price {
+  color: #dc3545;
+  text-decoration: line-through;
+}
+
+.header-gallery .card .card-body .card-discount {
+  color: #6c757d;
+}
+
+.header-gallery .card .card-body .buy-link {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 5px;
+  background: #01A4EA;
+  padding: .1rem .3rem;
+  color: #fff;
+  text-decoration: none;
+}
+
 .games-rounded-carousel {
   background: #F3F3F3;
   overflow: hidden;
@@ -483,59 +536,6 @@ footer .banks-logos p {
 .header-gallery .header-banner .carousel-item {
   -webkit-transition: ease-out .5s;
   transition: ease-out .5s;
-}
-
-.header-gallery .cards-wrapper .card {
-  position: relative;
-}
-
-.header-gallery .cards-wrapper .card .card-body .card-title {
-  color: #000;
-  font-weight: bold;
-  font-size: 18.4px;
-  display: block;
-  text-decoration: none;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.header-gallery .cards-wrapper .card .card-body .card-title:hover {
-  text-decoration: underline;
-  color: #01A4EA;
-}
-
-.header-gallery .cards-wrapper .card .card-body .card-desc {
-  color: #dc3545;
-  font-family: cairo bo;
-  display: block;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.header-gallery .cards-wrapper .card .card-body .card-desc:hover {
-  text-decoration: underline;
-  color: #a71d2a;
-}
-
-.header-gallery .cards-wrapper .card .card-body .card-price {
-  color: #dc3545;
-  text-decoration: line-through;
-}
-
-.header-gallery .cards-wrapper .card .card-body .card-discount {
-  color: #6c757d;
-}
-
-.header-gallery .cards-wrapper .card .card-body .buy-link {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  border-radius: 5px;
-  background: #01A4EA;
-  padding: .1rem .3rem;
-  color: #fff;
-  text-decoration: none;
 }
 
 .header-gallery .upcoming img {

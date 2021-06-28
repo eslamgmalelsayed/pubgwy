@@ -1,0 +1,48 @@
+// cards-wrapper
+%cards-wrapper{
+    .card{
+        position: relative;
+        .card-body{
+            .card-title{
+            color: #000;
+            font-weight: bold;
+            font-size: 18.4px;
+            display: block;
+            text-decoration: none;
+            text-overflow: ellipsis;
+            white-space: nowrap; 
+            overflow: hidden; 
+            &:hover{
+                text-decoration: underline;
+                color: $main-color;
+            }
+            }
+            .card-desc{
+                color: $font-color;
+                font-family: cairo bo;
+                display: block;
+                text-decoration: none;
+                cursor: pointer;
+            &:hover{
+                text-decoration: underline;
+                color: $font-hover;
+            }
+            }
+            .card-price{
+                color: $font-color;
+                text-decoration: line-through;
+            }
+            .card-discount{
+                color: $links-color;
+            }
+            .buy-link{
+                width: fit-content;
+                border-radius: $border-radius;
+                background: $main-color;
+                padding: .1rem .3rem;
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+    }
+}
