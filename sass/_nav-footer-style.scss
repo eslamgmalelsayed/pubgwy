@@ -39,6 +39,10 @@
             z-index: 1010;
         }
         .navbar-collapse{
+            position: absolute;
+            width: 100%;
+            top: 100%;
+            left: 0;
             transition: .3s;
         }
         .navbar-brand,.navbar-nav{
