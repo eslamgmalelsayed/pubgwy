@@ -132,6 +132,13 @@ html {
 
 .main-nav .container .navbar-toggler {
   background: #01A4EA;
+  top: 0;
+  z-index: 1010;
+}
+
+.main-nav .container .navbar-collapse {
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 @media (min-width: 1024px) and (max-width: 3000px) {
@@ -360,6 +367,12 @@ html {
   color: #28A745 !important;
 }
 
+@media (min-width: 320px) and (max-width: 991px) {
+  .mobile-nav-links .sell-linky {
+    border-bottom: 1px solid #0000001a !important;
+  }
+}
+
 .mobile-nav-links .dropdown-menu {
   padding: 0;
   border: 1px solid #01A4EA;
@@ -489,16 +502,6 @@ footer .banks-logos img {
 
 footer .banks-logos p {
   color: #6c757d;
-}
-
-@media (min-width: 320px) and (max-width: 991px) {
-  .navbar-collapse {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 100%;
-    left: 0;
-  }
 }
 
 header img {
