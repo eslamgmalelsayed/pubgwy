@@ -5,6 +5,7 @@
 @import 'pages-index';
 @import 'discount-badge';
 @import 'cards';
+@import 'pagination';
 // blog item
 .blog-item{
     background: $section-color;
@@ -263,6 +264,7 @@
                 background: $section-color;
                 font-size: 12px;
             }
+            @extend %pagination;
    }
 }
 

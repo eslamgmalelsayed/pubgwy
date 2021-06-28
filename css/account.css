@@ -508,6 +508,24 @@ footer .banks-logos p {
   color: #6c757d;
 }
 
+.account .page-link {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  width: 35px;
+  height: 35px;
+  padding-top: .2rem;
+}
+
+.account .page-link:focus {
+  border: 2px solid #01A4EA;
+  border-radius: 50%;
+}
+
+[aria-label="Next"], [aria-label="Previous"] {
+  border: none !important;
+}
+
 header img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -833,24 +851,6 @@ header img {
 
 .account hr:last-of-type {
   display: none;
-}
-
-.account .pagination .page-link {
-  border: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  width: 35px;
-  height: 35px;
-  padding-top: .2rem;
-}
-
-.account .pagination .page-link:focus {
-  border: 2px solid #01A4EA;
-  border-radius: 50%;
-}
-
-.account [aria-label="Next"], .account [aria-label="Previous"] {
-  border: none !important;
 }
 
 /* Create an active/current tablink class */

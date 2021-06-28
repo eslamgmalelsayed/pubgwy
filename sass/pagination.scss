@@ -1,0 +1,17 @@
+%pagination{
+    .page-link{
+        border: none;
+        box-shadow: none;
+        width: 35px;
+        height: 35px;
+        padding-top: .2rem;
+        &:focus{
+            border: 2px solid $main-color;
+            border-radius: 50%;
+        }
+        
+    }
+}
+[aria-label="Next"],[aria-label="Previous"]{
+    border: none !important;
+}
