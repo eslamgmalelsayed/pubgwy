@@ -8,6 +8,9 @@
 .games-rounded-carousel{
     background: $section-color;
     overflow: hidden;
+    .splide__slide__container{
+        padding: .5rem 0;
+    }
     img{
         border: 2px solid $main-color;
         object-position: center;
@@ -15,6 +18,7 @@
         transition: .3s;
         &:hover{
             filter: saturate(250%);
+            transform: scale(1.030);
         }
     }
 }

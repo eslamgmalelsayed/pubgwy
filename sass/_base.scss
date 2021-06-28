@@ -5,25 +5,25 @@
     box-sizing: border-box;
     text-transform: capitalize;
     font-family: cairo norm;
+    scrollbar-color: #01A4EA #c8edfc; //firefox support 
 }
 //scroll
 html{scroll-behavior: smooth;}
-
 //fonts
 //bold black
 @font-face {
     font-family: cairo bo;
-    src: url(../fonts/Cairo-Black.ttf);
+    src: url('../fonts/Cairo-Black.ttf');
 }
 //light
 @font-face {
     font-family: cairo li;
-    src: url(../fonts/Cairo-Light.ttf);
+    src: url('../fonts/Cairo-Light.ttf');
 }
 //normal
 @font-face {
     font-family: cairo norm;
-    src: url(../fonts/Cairo-Regular.ttf);
+    src: url('../fonts/Cairo-Regular.ttf');
 }
 
 //colors

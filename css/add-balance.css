@@ -5,6 +5,7 @@
           box-sizing: border-box;
   text-transform: capitalize;
   font-family: cairo norm;
+  scrollbar-color: #01A4EA #c8edfc;
 }
 
 html {
@@ -13,17 +14,17 @@ html {
 
 @font-face {
   font-family: cairo bo;
-  src: url(../fonts/Cairo-Black.ttf);
+  src: url("../fonts/Cairo-Black.ttf");
 }
 
 @font-face {
   font-family: cairo li;
-  src: url(../fonts/Cairo-Light.ttf);
+  src: url("../fonts/Cairo-Light.ttf");
 }
 
 @font-face {
   font-family: cairo norm;
-  src: url(../fonts/Cairo-Regular.ttf);
+  src: url("../fonts/Cairo-Regular.ttf");
 }
 
 .animated-icon1 {
@@ -94,6 +95,12 @@ html {
   border-bottom: 1px solid #0000001a;
 }
 
+.top-bar .container p {
+  font-size: 14px;
+  color: #6c757d;
+  margin: 0;
+}
+
 .top-bar .container a {
   color: #6c757d;
   font-family: cairo bo;
@@ -127,29 +134,68 @@ html {
   background: #01A4EA;
 }
 
+@media (min-width: 1024px) and (max-width: 3000px) {
+  .main-nav .container .navbar-brand, .main-nav .container .navbar-nav {
+    width: 27.5%;
+  }
+}
+
+.main-nav .container .navbar-form {
+  width: 45%;
+}
+
+@media (min-width: 320px) and (max-width: 991px) {
+  .main-nav .container .navbar-form {
+    width: 80%;
+    margin: 1rem auto !important;
+  }
+}
+
+.main-nav .container form {
+  -webkit-box-shadow: 0px 5px 6px -1px rgba(172, 150, 150, 0.1);
+          box-shadow: 0px 5px 6px -1px rgba(172, 150, 150, 0.1);
+  position: relative;
+  width: 40%;
+}
+
+.main-nav .container form .input-group::after {
+  position: absolute;
+  content: '\f002';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  color: #b1b1b1;
+  font-size: 14px;
+  text-align: center;
+  padding: .2rem .1rem;
+  width: 20px;
+  height: 20px;
+  top: 2.5px;
+  right: 2.5px;
+  z-index: 999;
+}
+
+.main-nav .container form .input-group ::-webkit-input-placeholder {
+  color: #ced4da;
+}
+
+.main-nav .container form .input-group :-ms-input-placeholder {
+  color: #ced4da;
+}
+
+.main-nav .container form .input-group ::-ms-input-placeholder {
+  color: #ced4da;
+}
+
+.main-nav .container form .input-group ::placeholder {
+  color: #ced4da;
+}
+
 .main-nav .container form .input-group input {
-  border-radius: 5px;
+  height: 30px;
 }
 
 .main-nav .container form .input-group input:focus {
   border: #0000001a 1px solid;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.main-nav .container form .input-group .input-group-btn {
-  margin-right: -2.5rem !important;
-  z-index: 99;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.main-nav .container form .input-group .input-group-btn .btn {
-  color: #999;
-}
-
-.main-nav .container form .input-group .input-group-btn .btn:focus {
-  border: none;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -160,11 +206,29 @@ html {
 }
 
 .main-nav .container ul .sell-link, .main-nav .container ul .login-link {
-  padding: .3rem 1.5rem;
-  margin: 0 .2rem;
+  width: 90px;
+  height: 30px;
+  padding: .3rem .1rem;
+  font-size: 10px;
+  font-weight: bold;
+  margin: 0 .1rem;
   border-radius: 5px;
   color: #fff !important;
-  font-size: 13px;
+  text-align: center;
+}
+
+@media (min-width: 320px) and (max-width: 991px) {
+  .main-nav .container ul .login-link {
+    margin-top: .4rem;
+    padding: .3rem;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-nav .container ul .login-link {
+    margin-left: 1rem;
+  }
 }
 
 .main-nav .container ul .sell-link {
@@ -187,11 +251,12 @@ html {
   width: 10px;
   height: 10px;
   line-height: 1.4rem;
-  top: 0;
+  top: -6px;
   margin-left: 1.5rem;
-  margin-right: .9rem;
+  margin-right: -.3rem;
   color: #fd7e14;
   font-weight: bold;
+  font-size: 12px;
   text-align: center;
 }
 
@@ -201,8 +266,28 @@ html {
           box-shadow: 0px 5px 6px -1px rgba(172, 150, 150, 0.3);
 }
 
+.pages-bar ul li:last-of-type::after {
+  content: none;
+}
+
+.pages-bar ul li {
+  position: relative;
+  border-bottom: 3px solid transparent;
+}
+
 .pages-bar ul li:hover {
   background: #F8F9FA;
+  border-bottom: 3px solid #01A4EA;
+}
+
+.pages-bar ul li::after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 20px;
+  background: #f6efef;
+  top: 10px;
+  left: 0;
 }
 
 .pages-bar ul li a {
@@ -211,7 +296,6 @@ html {
   font-size: 12px;
   text-decoration: none;
   padding: .6rem 1.5rem !important;
-  border-left: 1px solid #f6efef;
 }
 
 .pages-bar ul li a:hover, .pages-bar ul li a:focus {
@@ -274,10 +358,6 @@ html {
 
 .mobile-nav-links .sell-linky {
   color: #28A745 !important;
-}
-
-.mobile-nav-links .login-linky {
-  color: #01A4EA !important;
 }
 
 .mobile-nav-links .dropdown-menu {
@@ -400,8 +480,25 @@ footer .contact-part .follow-us i {
   color: #fff;
 }
 
+footer .banks-logos img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
 footer .banks-logos p {
   color: #6c757d;
+}
+
+@media (min-width: 320px) and (max-width: 991px) {
+  .navbar-collapse {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    left: 0;
+  }
 }
 
 .add-balance {
