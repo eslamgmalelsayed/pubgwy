@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/browser-logo.png">
+    <meta name="describtion" content="pubg" />
+    <meta name="keywords" content="pubg" />
+    <meta name="author" content="pubg" />
+    <title>login</title>
+    <link rel="stylesheet" href="css/all.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css"/>
+    <link rel="stylesheet" href="css/hover-min.css">
+    <link rel="stylesheet" href="css/blog-show.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+     <!-- top-bar -->
+     <section class="top-bar">
+      <div class="container py-2">   
+          <div class="row m-auto">
+              <div class="col-lg-6 col-12 text-lg-start text-center">
+                <p>خلافاَ للإعتقاد السائد فإن لوريم إيبسوم ليس نصاَ عشوائياً</p>
+              </div>
+              <div class="col-lg-6 col-12 text-lg-end text-center">
+                  <a href="account.html">المدونة</a>
+                  <a href="login.html">تسجيل الدخول</a>
+                  <a href="#">تسجيل حساب جديد</a>
+                  <a class="last-link" href="add-balance.html">+ إضافة رصيد</a>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- sticky position wrapper -->
+  <div class="sticky-position-wrapper sticky-top">
+  <!-- main-bar -->
+  <section class="main-nav">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark py-2">
+            <div style="position: relative;" class="container">
+                <a class="navbar-brand" href="#">
+                    <img class="img-fluid" src="img/logo.svg" loading="lazy" alt="logo" width="190" height="24">
+                </a>
+                <!-- large view -->
+                <form class="navbar-form m-auto order-2 order-lg-0 justify-content-center" role="search">
+                  <div class="input-group">
+                      <input type="text" class="form-control py-0 ps-4 my-0" placeholder="بحث" name="srch-term" id="srch-term">
+                  </div>
+              </form>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex text-center justify-content-end">
+                  <li class="nav-item d-none d-lg-block ">
+                    <a class="nav-link sell-link" href="#">بيع</a>
+                  </li>
+                  <li class="nav-item d-none d-md-block">
+                      <a class="nav-link login-link" href="#">تسجيل الدخول</a>
+                  </li>
+                  <li class="nav-item d-lg-block d-none">
+                      <a class="nav-link" href="#"><i style="font-size: 20px;" class="fas fa-dolly"></i></a>
+                      <span class="order-count"></span>
+                  </li>
+              </ul>
+              <!-- end large view -->
+                <!-- hamburger menu -->
+            <button class="navbar-toggler first-button " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <div class="animated-icon1"><span></span><span></span><span></span></div>
+            </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- mobile view -->
+                <ul class="navbar-nav d-lg-none d-block mobile-nav-links text-center"> 
+                    <li class="nav-item">
+                      <a class="nav-link sell-linky" href="#">+ بيع</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        الأقسام 
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">لينك</a></li>
+                        <li><a class="dropdown-item" href="#">لينك</a></li>
+                        <li><a class="dropdown-item border-0" href="#">لينك</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        الأقسام 
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">لينك</a></li>
+                        <li><a class="dropdown-item" href="#">لينك</a></li>
+                        <li><a class="dropdown-item border-0" href="#">لينك</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        الأقسام 
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">لينك</a></li>
+                        <li><a class="dropdown-item" href="#">لينك</a></li>
+                        <li><a class="dropdown-item border-0" href="#">لينك</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item border-0">
+                        <a class="nav-link" href="#">لينك</a>
+                    </li>
+                    <li class="nav-item d-lg-block d-none ">
+                        <a class="nav-link" href="#"><i class="fas fa-dolly"></i></a>
+                        <span class="order-count"></span>
+                    </li>            
+                </ul>
+                <!-- end mobile view -->
+              </div>                
+            </div>
+          </nav>
+    </div>
+</section>
+<!-- pages bar for large screen -->
+<section class="pages-bar d-lg-block d-none">
+    <div class="container">
+        <nav>
+          <ul style="position: relative;" class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link x" href="#">لينك</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link x" href="#">لينك</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link x" href="#">لينك</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">قائمة</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">لينك</a></li>
+                <li><a class="dropdown-item" href="#">لينك </a></li>
+                <li><a class="dropdown-item" href="#">لينك  </a></li>
+              </ul>
+            </li>
+          </ul> 
+        </nav>
+    </div>
+</section>
+  </div>
+    <!-- blog-show -->
+    <section class="blog-show">
+      <div class="container py-3">
+        <!-- hovered-logos -->
+        <div class="row m-auto justify-content-around hovered-logos">
+          <!-- logo space-->
+          <div class="col-lg col-6 m-lg-1 my-1 logo-wrapper logo-wrapper-knight p-0 m-0">
+            <a class=" text-decoration-none " href="#">
+              <div class="d-flex justify-content-end logo-part">
+                <span class="link-name">knight online</span>
+                <div class="logo-img">
+                  <img class="img-fluid" src="img/logo1.png" alt="logo">
+                </div>
+              </div>
+            </a>
+          </div>
+           <!-- logo space-->
+           <div class="col-lg col-6 m-lg-1 my-1 logo-wrapper logo-wrapper-pubg p-0 m-0">
+            <a class=" text-decoration-none " href="#">
+              <div class="d-flex justify-content-end logo-part">
+                <span class="link-name">pubg mobile</span>
+                <div class="logo-img">
+                  <img class="img-fluid" src="img/logo2.png" alt="logo">
+                </div>
+              </div>
+            </a>
+          </div>
+           <!-- logo space-->
+           <div class="col-lg col-6 m-lg-1 my-1 logo-wrapper logo-wrapper-valorant p-0 m-0">
+            <a class=" text-decoration-none " href="#">
+              <div class="d-flex justify-content-end logo-part">
+                <span class="link-name">valorant</span>
+                <div class="logo-img">
+                  <img class="img-fluid" src="img/logo3.png" alt="logo">
+                </div>
+              </div>
+            </a>
+          </div>
+           <!-- logo space-->
+           <div class="col-lg col-6 m-lg-1 my-1 logo-wrapper logo-wrapper-league p-0 m-0">
+            <a class=" text-decoration-none " href="#">
+              <div class="d-flex justify-content-end logo-part">
+                <span class="link-name">league</span>
+                <div class="logo-img">
+                  <img class="img-fluid" src="img/logo4.png" alt="logo">
+                </div>
+              </div>
+            </a>
+          </div>
+           <!-- logo space-->
+           <div class="col-lg col-6 m-lg-1 my-1 logo-wrapper logo-wrapper-cs p-0 m-0">
+            <a class=" text-decoration-none " href="#">
+              <div class="d-flex justify-content-end logo-part">
+                <span class="link-name">cs:go</span>
+                <div class="logo-img">
+                  <img class="img-fluid" src="img/logo5.png" alt="logo">
+                </div>
+              </div>
+            </a>
+          </div>
+           <!-- logo space-->
+           <div class="col-lg col-6 m-lg-1 my-1 logo-wrapper logo-wrapper-metin p-0 m-0">
+            <a class=" text-decoration-none " href="#">
+              <div class="d-flex justify-content-end logo-part">
+                <span class="link-name">metin 2</span>
+                <div class="logo-img">
+                  <img class="img-fluid" src="img/logo6.png" alt="logo">
+                </div>
+              </div>
+            </a>
+          </div>
+           <!-- logo space-->
+           <div class="col-lg col-6 m-lg-1 my-1 logo-wrapper logo-wrapper-black p-0 m-0">
+            <a class=" text-decoration-none " href="#">
+              <div class="d-flex justify-content-end logo-part">
+                <span class="link-name">black desert</span>
+                <div class="logo-img">
+                  <img class="img-fluid" src="img/logo7.png" alt="logo">
+                </div>
+              </div>
+            </a>
+          </div>
+           <!-- logo space-->
+           <div class="col-lg col-6 m-lg-1 my-1 logo-wrapper logo-wrapper-other p-0 m-0">
+            <a class=" text-decoration-none " href="#">
+              <div class="d-flex justify-content-end logo-part">
+                <span class="link-name">other games</span>
+                <div class="logo-img">
+                  <img class="img-fluid" src="img/logo8.png" alt="logo">
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+         <!-- pages-index -->
+          <div class="pages-index mt-3 mb-5">
+            <a href="#">الرئيسية</a>
+            <span> > </span>
+            <a href="#">المدونة</a>
+            <span> > </span>
+            <span class="page-index">طرق الدفع</span>
+          </div>
+          <!-- main row -->
+          <div class="row m-auto main-row">
+            <div class="col-lg-3">
+              <!-- search area -->
+              <div class="input-area">
+                  <input type="search" placeholder=" بحث " />
+                <button>
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+              <!-- side-part 1 -->
+              <div class="side-part d-lg-block d-none pb-2">
+                <!-- tag-name -->
+                <div class="tag-name">
+                  <span>الأشهر</span>
+                  <i class="fas fa-fire float-end fs-4"></i>
+                </div>
+                <!-- side-show  -->
+                <div class="side-show m-3">
+                  <div class="overlay">
+                  <a href="#"><img class="img-fluid" src="img/side1.jpg" alt="s"></a>
+                  </div>
+                  <p> نص نص نص نص نص نص نص نص  صن ن صن</p>
+                </div>
+                <!-- end -->
+                <!-- side-show  -->
+                <div class="side-show m-3">
+                  <div class="overlay">
+                  <a href="#"><img class="img-fluid" src="img/side1.jpg" alt="s"></a>
+                  </div>
+                  <p> نص نص نص نص نص نص نص نص  صن ن صن</p>
+                </div>
+                <!-- end -->
+                <!-- side-show  -->
+                <div class="side-show m-3">
+                  <div class="overlay">
+                  <a href="#"><img class="img-fluid" src="img/side1.jpg" alt="s"></a>
+                  </div>
+                  <p> نص نص نص نص نص نص نص نص  صن ن صن</p>
+                </div>
+                <!-- end -->
+                <!-- side-show  -->
+                <div class="side-show m-3">
+                  <div class="overlay">
+                  <a href="#"><img class="img-fluid" src="img/side1.jpg" alt="s"></a>
+                  </div>
+                  <p> نص نص نص نص نص نص نص نص  صن ن صن</p>
+                </div>
+                <!-- end -->
+              </div>
+              <!-- side-part 2 -->
+              <div class="side-part d-lg-block d-none pb-2">
+                <!-- tag-name -->
+                <div class="tag-name">
+                  <span>الأخبار</span>
+                  <i class="fas fa-th-large fs-4 float-end"></i>
+                </div>
+                <!-- side-logos  -->
+                <a href="#">
+                <div class="side-logos m-3 d-flex justify-content-between logo-1">
+                  <p>knight online <span>52</span></p>
+                  <img class="img-fluid" src="img/logo1.png" alt="l">
+                </div>
+                </a>
+                <a href="#">
+                <div class="side-logos m-3 d-flex justify-content-between logo-2">
+                  <p>pubg mobile <span>52</span></p>
+                  <img class="img-fluid" src="img/logo2.png" alt="l">
+                </div>
+                </a>
+                <a href="#">
+                <div class="side-logos m-3 d-flex justify-content-between logo-3">
+                  <p>valorant <span>52</span></p>
+                  <img class="img-fluid" src="img/logo3.png" alt="l">
+                </div>
+                </a>
+                <a href="#">
+                <div class="side-logos m-3 d-flex justify-content-between logo-4">
+                  <p>league <span>52</span></p>
+                  <img class="img-fluid" src="img/logo4.png" alt="l">
+                </div>
+                </a>
+                <a href="#">
+                <div class="side-logos m-3 d-flex justify-content-between logo-5">
+                  <p>cs:50 <span>52</span></p>
+                  <img class="img-fluid" src="img/logo5.png" alt="l">
+                </div>
+                </a>
+                <a href="#">
+                <div class="side-logos m-3 d-flex justify-content-between logo-6">
+                  <p>metin <span>52</span></p>
+                  <img class="img-fluid" src="img/logo6.png" alt="l">
+                </div>
+                </a>
+                <a href="#">
+                <div class="side-logos m-3 d-flex justify-content-between logo-7">
+                  <p>black desert <span>52</span></p>
+                  <img class="img-fluid" src="img/logo7.png" alt="l">
+                </div>
+                </a>
+                <a href="#">
+                <div class="side-logos m-3 d-flex justify-content-between logo-8">
+                  <p>other <span>52</span></p>
+                  <img class="img-fluid" src="img/logo8.png" alt="l">
+                </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-9 pt-lg-4 pb-2 main-col px-0 py-0">
+              <!-- header  -->
+              <div class="row m-auto header-row">
+                <!-- editor-part  -->
+                <div class="col-lg-2 col-6 order-lg-0 order-2 mt-2 editor-part text-lg-center">
+                  <div class="for-responsive">
+                    <img class="img-fluid" src="img/pink.jpg" alt="s">
+                    <a href="#"><i class="fas fa-circle"></i> الاسم</a>
+                    <p class="d-lg-block d-none">@editor</p>
+                  </div>
+                </div>
+                <!-- bg-par -->
+                <div class="col-lg-8 col-12 order-lg-0 order-1 bg-part px-0">
+                  <img class="img-fluid" src="img/bg9.jpg" alt="bg">             
+                </div>
+                <!-- views part -->
+                <div class="col-lg-2 col-6 order-lg-0 order-2 mt-2 views-part">
+                  <div class="square">
+                    <p>المشاهدات</p>
+                    <p class="fw-bold">55</p>
+                  </div>
+                </div>
+              </div>
+              <h1 class="my-3 text-center">تكست تكست تكست</h1>
+              <!-- text part -->
+              <div class="text-part p-3">
+                <p>لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه ... بروشور او فلاير على سبيل المثال ... او نماذج مواقع انترنت ...
+                  وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم ويقول البعض ان وضع النصوص 
+                </p>
+                <p>لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه ... بروشور او فلاير على سبيل المثال ... او نماذج مواقع انترنت ...
+                  وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم ويقول البعض ان وضع النصوص 
+                </p>
+                <p>لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه ... بروشور او فلاير على سبيل المثال ... او نماذج مواقع انترنت ...
+                  وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم ويقول البعض ان وضع النصوص 
+                </p>
+                <h6 class="fw-bold">روشور او فلاير على سبيل</h6>
+                  <img class="img-fluid" src="img/last.jpg" alt="l">
+                <p>لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه ... بروشور او فلاير على سبيل المثال ... او نماذج مواقع انترنت ...
+                  وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم ويقول البعض ان وضع النصوص 
+                </p>
+                <h6 class="fw-bold">روشور او فلاير على سبيل</h6>
+                <p>لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه ... بروشور او فلاير على سبيل المثال ... او نماذج مواقع انترنت ...
+                  وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم ويقول البعض ان وضع النصوص 
+                </p>
+              </div>
+              <!-- social -->
+              <div class="container-fluid">
+                <div class="social my-4 row m-auto text-lg-center text-start ">
+                  <div class="col-lg-3 col-12 scoial-logo all-social">
+                    <div class="row text-start">
+                      <div class="col-3 ps-0 responsive">
+                        <img src="img/pink.jpg" alt="l">
+                      </div>
+                      <div class="col">
+                        <a href="#">الاسم</a>
+                        <p>@editor</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg col-12 social-date all-social">
+                    <p><i class="far fa-calendar-alt fs-3 px-1 pt-2"></i> 24/7/20200 - 9.22 88</p>
+                  </div>
+                  <div class="col-lg col-12 social-icons all-social">
+                    <div class="d-flex justify-content-around pt-2">
+                      <span class="pt-1">مشاركة :</span>
+                       <a href="#"><i class="fab fa-twitter"></i></a>
+                       <a href="#"><i class="fab fa-facebook-f"></i></a>
+                       <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                       <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <!-- divide-bg -->
+                <div class="divide-bg my-2">
+                  <h4>أسئلة متكررة</h4>
+                </div>
+                <!-- instructions -->
+                <div class="instructions p-3">
+                  <h6>أسباب الحظر</h6>
+                  <p>لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه ... بروشور او فلاير على سبيل المثال ... او نماذج مواقع انترنت ...
+                    وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم يقول البعض ان وضع النصوص 
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer style="background: url(img/footer.png) no-repeat;
+      background-position: center;
+      background-size:cover;">
+      <div class="container pt-5 pb-1">
+        <!-- row adv -->
+        <div class="row m-auto text-center adv pb-5">
+          <div class="col-lg-3 col-md-6 col-sm-12 text-lg-start text-center mt-2">
+            <div class="row m-auto">
+              <div class="col-6 pe-0 mt-2">
+                <h6>رضاء العميل</h6>
+                <p>شكرا لاختيارك لنا لتسوق لعبتك</p>
+              </div>
+              <div class="col-6 ps-0">
+                <div class="circle">
+                  <i class="fas fa-thumbs-up"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 text-lg-start text-center mt-2">
+            <div class="row m-auto">
+              <div class="col-6 pe-0 mt-2">
+                <h6>أفضل الأسعار</h6>
+                <p>شكرا لاختيارك لنا لتسوق لعبتك</p>
+              </div>
+              <div class="col-6 ps-0">
+                <div class="circle">
+                  <i class="fas fa-hand-holding-usd"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 text-lg-start text-center mt-2">
+            <div class="row m-auto">
+              <div class="col-6 pe-0 mt-2">
+                <h6>التسوق الآمن</h6>
+                <p>استمتع بالتسوق بأسعار مخفضة</p>
+              </div>
+              <div class="col-6 ps-0">
+                <div class="circle">
+                  <i class="fas fa-user-lock "></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 text-lg-start text-center mt-2">
+            <div class="row m-auto">
+              <div class="col-6 pe-0 mt-2">
+                <h6>توصيل سريع</h6>
+                <p>شكرا لاختيارك لنا لتسوق لعبتك</p>
+              </div>
+              <div class="col-6 ps-0">
+                <div class="circle">
+                  <i class="fas fa-shipping-fast"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <!--  row info -->
+        <div class="row info py-4 m-auto ">
+          <div class="col-lg-2 col-md-4 col-6">
+            <h5>الدعم</h5>
+            <ul>
+              <li><a href="#">لينك</a></li>
+              <li><a href="#">لينك</a></li>
+              <li><a href="#">لينك</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-4 col-6">
+            <h5>الدعم</h5>
+            <ul>
+              <li><a href="#">لينك</a></li>
+              <li><a href="#">لينك</a></li>
+              <li><a href="#">لينك</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-4 col-6">
+            <h5>الدعم</h5>
+            <ul>
+              <li><a href="#">لينك</a></li>
+              <li><a href="#">لينك</a></li>
+              <li><a href="#">لينك</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-4 col-6">
+            <h5>الدعم</h5>
+            <ul>
+              <li><a href="#">لينك</a></li>
+              <li><a href="#">لينك</a></li>
+              <li><a href="#">لينك</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-4 col-6">
+            <h5>الدعم</h5>
+            <ul>
+              <li><a href="#">لينك</a></li>
+              <li><a href="#">لينك</a></li>
+              <li><a href="#">لينك</a></li>
+            </ul>
+          </div>
+          <!-- contact-part -->
+          <div class="col-lg-2 col-md-4 col-6 contact-part">
+            <h5>التواصل</h5>
+            <p><i class="fas fa-headset"></i> 54554270</p>
+            <p><i class="far fa-envelope"></i> gg@yahoo.com</p>
+            <div class="row p-0 follow-us">
+              <p>تابعنا</p>
+              <div class="col-2">
+                <div style="background:#3b5998;" class="circle hvr-buzz-out">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </div>
+              </div>
+              <div class="col-2">
+                <div style="background: #00aced;" class="circle hvr-buzz-out">
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+              </div>
+              <div class="col-2">
+                <div style="background: #e4405f;" class="circle hvr-buzz-out">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+              <div class="col-2">
+                <div style="background: #00aced;" class="circle hvr-buzz-out">
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+              </div>
+              <div class="col-2">
+                <div style="background: #7289DA;" class="circle hvr-buzz-out">
+                  <a href="#"><i class="fab fa-discord"></i></a>
+                </div>
+              </div>
+              <div class="col-2">
+                <div style="background: #6441a5;" class="circle hvr-buzz-out">
+                  <a href="#"><i class="fab fa-twitch"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+         
+        </div>
+        <!-- row banks logos -->
+        <div class="row m-auto justify-content-center text-center pt-3 banks-logos">
+          <img class="img-fluid col-4" src="img/banks.png" loading="lazy" alt="banks">
+          <p class="pt-3">جميع الحقوق محفوظة</p>
+        </div>
+      </div>
+    </footer>
+    <!-- scripts -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/hamburger.js"></script>
+    <!-- scripts
+</body>
+</html>

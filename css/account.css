@@ -531,11 +531,19 @@ header img {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+  min-width: 100%;
+  max-width: 100%;
 }
 
 .account {
   background: #F3F3F3;
-  margin-top: -2.5rem;
+  margin-top: -2rem;
+}
+
+@media (min-width: 320px) and (max-width: 991px) {
+  .account {
+    margin-top: -.5rem;
+  }
 }
 
 .account .personal-part {
@@ -546,7 +554,14 @@ header img {
 }
 
 .account .personal-part img {
-  width: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100px;
+  max-height: 100px;
 }
 
 .account .personal-part h5 i {
@@ -783,12 +798,14 @@ header img {
 }
 
 .account .tabcontent .orders-part img {
-  max-width: 100px;
-  min-width: 100px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
   -o-object-position: center;
      object-position: center;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100px;
+  max-height: 100px;
   background: #E9ECEF;
 }
 

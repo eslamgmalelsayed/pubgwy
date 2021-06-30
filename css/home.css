@@ -531,6 +531,17 @@ footer .banks-logos p {
   position: relative;
 }
 
+.header-gallery .card img {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 150px;
+  max-height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
 .header-gallery .card .card-body .card-title {
   color: #000;
   font-weight: bold;
@@ -558,6 +569,10 @@ footer .banks-logos p {
 .header-gallery .card .card-body .card-desc:hover {
   text-decoration: underline;
   color: #a71d2a;
+}
+
+.header-gallery .card .card-body .d-flex .col-6 {
+  padding: 0;
 }
 
 .header-gallery .card .card-body .card-price {
@@ -626,11 +641,26 @@ footer .banks-logos p {
 }
 
 .header-gallery .header-banner img {
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
   -o-object-position: center;
      object-position: center;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 150px;
+  max-height: 150px;
   border-radius: 5px;
+}
+
+.header-gallery .header-banner .carousel-item img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 304px;
+  max-height: 304px;
 }
 
 .header-gallery .header-banner .carousel-indicators [data-bs-target] {
@@ -649,11 +679,20 @@ footer .banks-logos p {
 }
 
 .header-gallery .upcoming img {
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
   -o-object-position: center;
      object-position: center;
   border-radius: 5px;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 150px;
+  max-height: 150px;
+}
+
+.header-gallery .upcoming .upcoming-carousel img {
+  min-height: 302px;
+  max-height: 302px;
 }
 
 .header-gallery .offers h1, .header-gallery .offers p {
@@ -746,10 +785,14 @@ footer .banks-logos p {
 }
 
 .header-gallery .all-offers img {
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
   -o-object-position: center;
      object-position: center;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 150px;
+  max-height: 150px;
   border-radius: 5px;
 }
 
@@ -769,9 +812,13 @@ footer .banks-logos p {
 .header-gallery .blog .card img {
   -o-object-position: center;
      object-position: center;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 0;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 150px;
+  max-height: 150px;
 }
 
 .header-gallery .blog .card .top-right {
@@ -829,6 +876,18 @@ footer .banks-logos p {
   text-decoration: underline;
 }
 
+.header-gallery .blog .blog-header img {
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 305px;
+  max-height: 305px;
+}
+
 .header-gallery .publishers {
   overflow: hidden;
 }
@@ -864,6 +923,24 @@ footer .banks-logos p {
   font-size: 12.5px;
 }
 
-.games-rounded-carousel .splide__arrows {
-  display: none !important;
+@media (min-width: 320px) and (max-width: 991px) {
+  .games-rounded-carousel .splide__arrows {
+    display: none;
+  }
+}
+
+svg {
+  fill: #ced4da;
+  -webkit-transform: scale(1.3) !important;
+          transform: scale(1.3) !important;
+}
+
+.splide__arrow--prev {
+  background: transparent;
+  right: -28px !important;
+}
+
+.splide__arrow--next {
+  background: transparent;
+  left: -28px !important;
 }

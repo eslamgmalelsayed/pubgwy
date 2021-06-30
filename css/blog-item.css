@@ -558,6 +558,17 @@ footer .banks-logos p {
   position: relative;
 }
 
+.blog-item .cards .card img {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 150px;
+  max-height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
 .blog-item .cards .card .card-body .card-title {
   color: #000;
   font-weight: bold;
@@ -585,6 +596,10 @@ footer .banks-logos p {
 .blog-item .cards .card .card-body .card-desc:hover {
   text-decoration: underline;
   color: #a71d2a;
+}
+
+.blog-item .cards .card .card-body .d-flex .col-6 {
+  padding: 0;
 }
 
 .blog-item .cards .card .card-body .card-price {
@@ -652,10 +667,14 @@ footer .banks-logos p {
 }
 
 .blog-item .main-container .item-show .game-img .item-img img {
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
   -o-object-position: center;
      object-position: center;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 180px;
+  max-height: 180px;
 }
 
 .blog-item .main-container .item-show .game-img .item-desc p {
@@ -761,10 +780,14 @@ footer .banks-logos p {
 }
 
 .blog-item .main-container .item-show .game-review img {
+  -o-object-fit: cover;
+     object-fit: cover;
   -o-object-position: center;
      object-position: center;
-  -o-object-fit: contain;
-     object-fit: contain;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 200px;
+  max-height: 200px;
 }
 
 .blog-item .main-container .item-show .game-review h1 {
@@ -799,7 +822,7 @@ footer .banks-logos p {
 .blog-item .main-container .item-show .game-review .multicolored::after {
   position: absolute;
   content: '';
-  background: url(../img/game-logo.png) no-repeat;
+  background: url("../img/game-logo.png") no-repeat;
   background-position: center;
   background-size: contain;
   width: 60px;
@@ -833,10 +856,14 @@ footer .banks-logos p {
 }
 
 .blog-item .comments .reviews img {
-  -o-object-fit: contain;
-     object-fit: contain;
   -o-object-position: center;
      object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 130px;
+  max-height: 130px;
 }
 
 .blog-item .comments .reviews .table-part .stars {

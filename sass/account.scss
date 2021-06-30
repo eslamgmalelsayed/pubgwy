@@ -8,18 +8,29 @@ header{
     img{
         object-fit: cover;
         object-position: center;
+        min-width: 100%;
+        max-width: 100%;
+    
     }
 }
 //  account
 .account{
     background: $section-color;
-    margin-top: -2.5rem;
+    margin-top: -2rem;
+    @media (min-width: 320px) and (max-width: 991px) {
+        margin-top: -.5rem;
+    }
     .personal-part{
         background: #fff;
         border-radius: $border-radius;
         box-shadow: 0px 3px 9px 4px rgba(165,153,153,0.25);
         img{
-            width: 100px;
+                object-fit: contain;
+                object-position: center;
+                min-width: 100%;
+                max-width: 100%;
+                min-height: 100px;
+                max-height: 100px;
         }
         h5{
             i{
@@ -217,10 +228,12 @@ header{
         }
         .orders-part{
             img{
-                max-width: 100px;
-                min-width: 100px;
-                object-fit: contain;
+                object-fit: cover;
                 object-position: center;
+                min-width: 100%;
+                max-width: 100%;
+                min-height: 100px;
+                max-height: 100px;
                 background: #E9ECEF;
                 // responsive
                 @media (min-width: 320px) and (max-width: 768px) {

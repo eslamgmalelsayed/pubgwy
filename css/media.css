@@ -1,4 +1,8 @@
-@media (min-width: 1441px) and (max-width: 2650px) {}
+@media (min-width: 1441px) and (max-width: 3001px) {
+    .container{
+        max-width: 90% ;
+    }
+}
 
 @media (min-width: 1201px) and (max-width: 1440px) {}
 

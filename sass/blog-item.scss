@@ -31,8 +31,12 @@
                         font-size: 13px;
                     }
                     img{
-                        object-fit: contain;
+                        object-fit: cover;
                         object-position: center;
+                        min-width: 100%;
+                        max-width: 100%;
+                        min-height: 180px;
+                        max-height: 180px;
                     }
                 }
                 .item-desc{
@@ -128,8 +132,12 @@
             }
             .game-review{
                 img{
+                    object-fit: cover;
                     object-position: center;
-                    object-fit: contain;
+                    min-width: 100%;
+                    max-width: 100%;
+                    min-height: 200px;
+                    max-height: 200px;
                 }
                 h1{
                     font-size: 18px;
@@ -157,7 +165,7 @@
                     &::after{
                         position: absolute;
                         content: '';
-                        background: url(../img/game-logo.png) no-repeat;
+                        background: url('../img/game-logo.png') no-repeat;
                         background-position: center;
                         background-size: contain;
                         width: 60px;
@@ -193,8 +201,12 @@
             width: 92%;
             .reviews{
                 img{
-                    object-fit: contain;
                     object-position: center;
+                    object-fit: cover;
+                    min-width: 100%;
+                    max-width: 100%;
+                    min-height: 130px;
+                    max-height: 130px;
                 }
                 .table-part{
                     .stars{

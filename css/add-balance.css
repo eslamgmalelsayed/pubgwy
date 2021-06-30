@@ -564,10 +564,14 @@ footer .banks-logos p {
 
 .add-balance .container .main .card img {
   padding: .5rem 2rem;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
   -o-object-position: center;
      object-position: center;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 150px;
+  max-height: 150px;
 }
 
 .add-balance .container .main .card p {

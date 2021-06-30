@@ -2,6 +2,14 @@
 %cards-wrapper{
     .card{
         position: relative;
+        img{
+            min-width: 100%;
+            max-width: 100%;
+            min-height: 150px;
+            max-height: 150px;
+            object-fit: cover;
+            object-position: center;
+        }
         .card-body{
             .card-title{
             color: #000;
@@ -27,6 +35,11 @@
                 text-decoration: underline;
                 color: $font-hover;
             }
+            }
+            .d-flex{
+                .col-6{
+                    padding: 0;
+                }
             }
             .card-price{
                 color: $font-color;
