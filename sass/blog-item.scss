@@ -31,8 +31,6 @@
                         font-size: 13px;
                     }
                     img{
-                        object-fit: cover;
-                        object-position: center;
                         min-width: 100%;
                         max-width: 100%;
                         min-height: 180px;
@@ -132,8 +130,6 @@
             }
             .game-review{
                 img{
-                    object-fit: cover;
-                    object-position: center;
                     min-width: 100%;
                     max-width: 100%;
                     min-height: 200px;
@@ -201,12 +197,14 @@
             width: 92%;
             .reviews{
                 img{
-                    object-position: center;
-                    object-fit: cover;
                     min-width: 100%;
                     max-width: 100%;
                     min-height: 130px;
                     max-height: 130px;
+                    @media (min-width: 320px) and (max-width: 450px) {
+                        min-height: 60px;
+                        max-height: 60px;
+                    }
                 }
                 .table-part{
                     .stars{
@@ -275,6 +273,17 @@
                 border-radius: $border-color;
                 background: $section-color;
                 font-size: 12px;
+                img{
+                    min-width: 100%;
+                    max-width: 100%;
+                    min-height: 90px;
+                    max-height: 90px;
+                    @media (min-width: 320px) and (max-width: 450px) {  
+                            object-fit: contain;  
+                            min-height: 100%;
+                             max-height: 100%;      
+                    }
+                }
             }
             @extend %pagination;
    }

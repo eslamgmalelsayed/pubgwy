@@ -839,6 +839,24 @@ footer .banks-logos p {
   background: #9D3EFD;
 }
 
+.blog-show .container .main-row .page-link {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  width: 35px;
+  height: 35px;
+  padding-top: .2rem;
+}
+
+.blog-show .container .main-row .page-link:focus {
+  border: 2px solid #01A4EA;
+  border-radius: 50%;
+}
+
+[aria-label="Next"], [aria-label="Previous"] {
+  border: none !important;
+}
+
 .blog-show {
   background: url("../img/blog_bg.jpg") no-repeat;
   background-position: center;
@@ -879,18 +897,24 @@ footer .banks-logos p {
 
 .blog-show .container .main-row .main-header .big-img {
   position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: start;
 }
 
 .blog-show .container .main-row .main-header .big-img img {
   border-radius: 5px;
-  -o-object-position: center;
-     object-position: center;
-  -o-object-fit: cover;
-     object-fit: cover;
   min-width: 100%;
   max-width: 100%;
   min-height: 250px;
   max-height: 250px;
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+  .blog-show .container .main-row .main-header .big-img img {
+    min-height: 150px;
+    max-height: 150px;
+  }
 }
 
 .blog-show .container .main-row .main-header .big-img .img-title {
@@ -920,18 +944,22 @@ footer .banks-logos p {
 .blog-show .container .main-row .main-header .small-img {
   position: relative;
   text-align: start;
+  width: 100%;
 }
 
 .blog-show .container .main-row .main-header .small-img img {
   border-radius: 5px;
-  -o-object-position: center;
-     object-position: center;
-  -o-object-fit: cover;
-     object-fit: cover;
   min-width: 100%;
   max-width: 100%;
   min-height: 120px;
   max-height: 120px;
+}
+
+@media (min-width: 425px) and (max-width: 991px) {
+  .blog-show .container .main-row .main-header .small-img img {
+    min-height: 250px;
+    max-height: 250px;
+  }
 }
 
 .blog-show .container .main-row .main-header .small-img .img-title {
@@ -966,17 +994,23 @@ footer .banks-logos p {
 
 .blog-show .container .main-row .game-news .img-holder {
   position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .blog-show .container .main-row .game-news .img-holder img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
   min-width: 100%;
   max-width: 100%;
-  min-height: 180px;
-  max-height: 180px;
+  min-height: 150px;
+  max-height: 150px;
+  border-radius: 5px;
+}
+
+@media (min-width: 425px) and (max-width: 991px) {
+  .blog-show .container .main-row .game-news .img-holder img {
+    min-height: 300px;
+    max-height: 300px;
+  }
 }
 
 .blog-show .container .main-row .game-news .img-holder span {

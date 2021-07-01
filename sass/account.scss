@@ -228,17 +228,15 @@ header{
         }
         .orders-part{
             img{
-                object-fit: cover;
-                object-position: center;
                 min-width: 100%;
                 max-width: 100%;
                 min-height: 100px;
                 max-height: 100px;
                 background: #E9ECEF;
                 // responsive
-                @media (min-width: 320px) and (max-width: 768px) {
-                    max-width: 100% !important;
-                    min-width: 100% !important;
+                @media (min-width: 320px) and (max-width: 425px) {
+                    min-height: 80px;
+                    max-height: 80px;
                     margin-bottom: 1rem;
                 }
             }

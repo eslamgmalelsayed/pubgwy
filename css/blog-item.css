@@ -563,10 +563,6 @@ footer .banks-logos p {
   max-width: 100%;
   min-height: 150px;
   max-height: 150px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
 }
 
 .blog-item .cards .card .card-body .card-title {
@@ -667,10 +663,6 @@ footer .banks-logos p {
 }
 
 .blog-item .main-container .item-show .game-img .item-img img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
   min-width: 100%;
   max-width: 100%;
   min-height: 180px;
@@ -780,10 +772,6 @@ footer .banks-logos p {
 }
 
 .blog-item .main-container .item-show .game-review img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
   min-width: 100%;
   max-width: 100%;
   min-height: 200px;
@@ -856,14 +844,17 @@ footer .banks-logos p {
 }
 
 .blog-item .comments .reviews img {
-  -o-object-position: center;
-     object-position: center;
-  -o-object-fit: cover;
-     object-fit: cover;
   min-width: 100%;
   max-width: 100%;
   min-height: 130px;
   max-height: 130px;
+}
+
+@media (min-width: 320px) and (max-width: 450px) {
+  .blog-item .comments .reviews img {
+    min-height: 60px;
+    max-height: 60px;
+  }
 }
 
 .blog-item .comments .reviews .table-part .stars {
@@ -957,4 +948,20 @@ footer .banks-logos p {
   border-radius: #0000001a;
   background: #F3F3F3;
   font-size: 12px;
+}
+
+.blog-item .comments .comments-part img {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 90px;
+  max-height: 90px;
+}
+
+@media (min-width: 320px) and (max-width: 450px) {
+  .blog-item .comments .comments-part img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    min-height: 100%;
+    max-height: 100%;
+  }
 }

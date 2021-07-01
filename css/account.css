@@ -798,10 +798,6 @@ header img {
 }
 
 .account .tabcontent .orders-part img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
   min-width: 100%;
   max-width: 100%;
   min-height: 100px;
@@ -809,10 +805,10 @@ header img {
   background: #E9ECEF;
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 425px) {
   .account .tabcontent .orders-part img {
-    max-width: 100% !important;
-    min-width: 100% !important;
+    min-height: 80px;
+    max-height: 80px;
     margin-bottom: 1rem;
   }
 }
