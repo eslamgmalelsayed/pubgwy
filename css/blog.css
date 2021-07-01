@@ -871,253 +871,141 @@ footer .banks-logos p {
   border-radius: 5px;
 }
 
-.blog-show .container .main-row .main-col {
-  -webkit-box-shadow: 0px 0px 10px 1px rgba(172, 150, 150, 0.3);
-          box-shadow: 0px 0px 10px 1px rgba(172, 150, 150, 0.3);
-  border-radius: 5px;
-  background: #F3F3F3;
-  margin-top: 4rem;
+.blog-show .container .main-row {
+  background: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
-@media (min-width: 320px) and (max-width: 991px) {
-  .blog-show .container .main-row .main-col .header-row .editor-part .for-responsive {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
-  }
+.blog-show .container .main-row .main-header .big-img {
+  position: relative;
 }
 
-.blog-show .container .main-row .main-col .header-row .editor-part img {
-  -o-object-fit: contain;
-     object-fit: contain;
-  -o-object-position: center;
-     object-position: center;
-  max-width: 100%;
-  min-width: 100%;
-  max-height: 90px;
-  min-height: 90px;
-}
-
-@media (min-width: 320px) and (max-width: 991px) {
-  .blog-show .container .main-row .main-col .header-row .editor-part img {
-    max-width: 20%;
-    min-width: 20%;
-    max-height: 50px;
-    min-height: 50px;
-  }
-}
-
-.blog-show .container .main-row .main-col .header-row .editor-part a {
-  color: #000;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-@media (min-width: 320px) and (max-width: 991px) {
-  .blog-show .container .main-row .main-col .header-row .editor-part a {
-    padding-top: .5rem;
-    padding-right: .3rem;
-  }
-}
-
-.blog-show .container .main-row .main-col .header-row .editor-part a:hover {
-  text-decoration: underline;
-}
-
-.blog-show .container .main-row .main-col .header-row .editor-part a i {
-  color: #DC3545;
-  font-size: .5rem;
-}
-
-.blog-show .container .main-row .main-col .header-row .editor-part p {
-  font-size: 12px;
-}
-
-.blog-show .container .main-row .main-col .header-row .bg-part {
-  text-align: center;
-}
-
-@media (min-width: 991px) and (max-width: 3001px) {
-  .blog-show .container .main-row .main-col .header-row .bg-part {
-    margin-top: -7rem;
-  }
-}
-
-.blog-show .container .main-row .main-col .header-row .bg-part img {
+.blog-show .container .main-row .main-header .big-img img {
   border-radius: 5px;
   -o-object-position: center;
      object-position: center;
-  -o-object-fit: contain;
-     object-fit: contain;
-  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   min-width: 100%;
-  max-height: 100%;
-  min-height: 100%;
+  max-width: 100%;
+  min-height: 250px;
+  max-height: 250px;
 }
 
-.blog-show .container .main-row .main-col .header-row .views-part .square {
-  background: #01A4EA;
+.blog-show .container .main-row .main-header .big-img .img-title {
+  position: absolute;
+  background: #FD3E77;
+  border-radius: 5px;
+  padding: 0 .5rem;
   color: #fff;
-  width: 85px;
-  height: 60px;
-  border-radius: 5px;
-  padding: .8rem 0 .5rem;
-  text-align: center;
+  top: 5px;
+  right: 10px;
+  font-size: 13px;
 }
 
-@media (min-width: 320px) and (max-width: 991px) {
-  .blog-show .container .main-row .main-col .header-row .views-part .square {
-    margin-right: auto;
-  }
-}
-
-.blog-show .container .main-row .main-col .header-row .views-part .square p {
-  font-size: 12px;
-  margin: 0;
-}
-
-.blog-show .container .main-row .main-col h1 {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.blog-show .container .main-row .main-col .text-part {
-  text-align: center;
-}
-
-.blog-show .container .main-row .main-col .text-part p {
-  font-size: 14px;
-  text-align: start;
-}
-
-.blog-show .container .main-row .main-col .text-part h6 {
-  text-align: start;
-}
-
-.blog-show .container .main-row .main-col .text-part img {
-  -o-object-position: center;
-     object-position: center;
-  -o-object-fit: contain;
-     object-fit: contain;
-  max-width: 100%;
-  min-width: 100%;
-  max-height: 300px;
-  min-height: 300px;
-  margin: 1rem 0;
-}
-
-.blog-show .container .main-row .main-col .social .all-social {
-  border-radius: 5px;
-  -webkit-box-shadow: 0px 0px 5px 2px rgba(172, 150, 150, 0.1);
-          box-shadow: 0px 0px 5px 2px rgba(172, 150, 150, 0.1);
-}
-
-@media (min-width: 320px) and (max-width: 500px) {
-  .blog-show .container .main-row .main-col .social .all-social .responsive {
-    width: 18%;
-  }
-}
-
-@media (min-width: 500px) and (max-width: 991px) {
-  .blog-show .container .main-row .main-col .social .all-social .responsive {
-    width: 10%;
-  }
-}
-
-.blog-show .container .main-row .main-col .social .social-icons span {
+.blog-show .container .main-row .main-header .big-img .img-desc {
+  color: #fff;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
   font-size: 18px;
   font-weight: bold;
 }
 
-.blog-show .container .main-row .main-col .social .social-icons i {
-  color: #fff;
-  width: 35px;
-  height: 35px;
-  padding: .6rem;
-  border-radius: 50%;
-  -webkit-transition: .2s;
-  transition: .2s;
-}
-
-.blog-show .container .main-row .main-col .social .social-icons .fa-twitter {
-  background: #00aced;
-}
-
-.blog-show .container .main-row .main-col .social .social-icons .fa-twitter:hover {
-  background: #0399cf;
-}
-
-.blog-show .container .main-row .main-col .social .social-icons .fa-facebook-f {
-  background: #3b5998;
-}
-
-.blog-show .container .main-row .main-col .social .social-icons .fa-facebook-f:hover {
-  background: #2e4475;
-}
-
-.blog-show .container .main-row .main-col .social .social-icons .fa-linkedin-in {
-  background: #007bb6;
-}
-
-.blog-show .container .main-row .main-col .social .social-icons .fa-linkedin-in:hover {
-  background: #0570a1;
-}
-
-.blog-show .container .main-row .main-col .social .social-icons .fa-whatsapp {
-  background: #29a628;
-}
-
-.blog-show .container .main-row .main-col .social .social-icons .fa-whatsapp:hover {
-  background: #239023;
-}
-
-.blog-show .container .main-row .main-col .social .social-date {
-  font-size: 16px;
-}
-
-.blog-show .container .main-row .main-col .social .scoial-logo img {
-  -o-object-fit: contain;
-     object-fit: contain;
-  -o-object-position: center;
-     object-position: center;
-  min-height: 100%;
-  max-height: 100%;
-  min-width: 50px;
-  max-width: 50px;
-}
-
-.blog-show .container .main-row .main-col .social .scoial-logo a {
-  text-decoration: none;
-  color: #000;
-  font-weight: bold;
-}
-
-.blog-show .container .main-row .main-col .social .scoial-logo a:hover {
+.blog-show .container .main-row .main-header .big-img .img-desc:hover {
   text-decoration: underline;
 }
 
-.blog-show .container .main-row .main-col .social .scoial-logo p {
-  font-size: 12px;
+.blog-show .container .main-row .main-header .small-img {
+  position: relative;
+  text-align: start;
 }
 
-.blog-show .container .main-row .main-col .divide-bg {
-  background: url("../img/div.png") no-repeat;
-  background-position: center;
-  background-size: cover;
+.blog-show .container .main-row .main-header .small-img img {
+  border-radius: 5px;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 120px;
+  max-height: 120px;
+}
+
+.blog-show .container .main-row .main-header .small-img .img-title {
+  background: #9D3EFD;
+  border-radius: 5px;
+  padding: 0 .5rem;
   color: #fff;
-  padding: .5rem 1rem;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 13px;
+}
+
+.blog-show .container .main-row .main-header .small-img .img-desc {
+  color: #fff;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.blog-show .container .main-row .main-header .small-img .img-desc:hover {
+  text-decoration: underline;
+}
+
+.blog-show .container .main-row .game-news {
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(172, 150, 150, 0.3);
+          box-shadow: 0px 0px 10px 1px rgba(172, 150, 150, 0.3);
   border-radius: 5px;
 }
 
-.blog-show .container .main-row .main-col .instructions {
-  background: #fff;
+.blog-show .container .main-row .game-news .img-holder {
+  position: relative;
+}
+
+.blog-show .container .main-row .game-news .img-holder img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 180px;
+  max-height: 180px;
+}
+
+.blog-show .container .main-row .game-news .img-holder span {
+  position: absolute;
+  background: #FD6A00;
+  border-radius: 5px;
+  padding: 0 .5rem;
+  color: #fff;
+  top: 10px;
+  right: 10px;
+  font-size: 13px;
+}
+
+.blog-show .container .main-row .game-news .info a {
+  color: #000;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.blog-show .container .main-row .game-news .info a:hover {
+  text-decoration: underline;
+}
+
+.blog-show .container .main-row .game-news .info p {
   font-size: 12px;
-  border-radius: 5px;
 }
 
-.blog-show .container .main-row .main-col h6 {
-  color: #01A4EA;
+.blog-show .container .main-row .game-news .info p a {
+  font-size: 12px;
+  font-weight: normal;
 }

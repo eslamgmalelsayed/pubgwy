@@ -2,6 +2,7 @@
 @import 'base';
 @import 'hamburger';
 @import 'nav-footer-style';
+@import 'logo-side';
 // header
 
 //  blog-show
@@ -12,149 +13,7 @@
     background-attachment: fixed;
     .container{ 
         // hovered-logos
-        .hovered-logos {
-            //  logos
-            .logo-wrapper{
-                box-shadow: 0px 0px 10px 1px rgba(172,150,150,0.30);
-                border-radius: $border-radius;
-                @media (min-width: 320px) and (max-width: 991px) {
-                    width: 47%;
-                }
-                .logo-part{
-                    text-decoration: none;
-                    font-size: 10px;
-                    font-weight: bold;
-                    color: #000;
-                    @media (min-width: 991px) and (max-width: 1200px) {
-                        font-size: 8px;
-                    }
-                    .link-name{
-                        padding: .8rem .1rem;
-                        text-align: left;
-                    }                 
-                    img{
-                    object-position: center;
-                    object-fit: contain;
-                    border-radius: $border-radius;
-                    width: 45px;
-                    }   
-            }
-                &:hover{
-                    background: #3ebafd;
-                    .logo-part{
-                        color: #fff;
-                    }
-                    img{
-                        filter: none !important;
-                    }
-                    .logo-img{
-                        background: #faf7f7;
-                    }
-                }
-            }
-            // different logo parts
-            .logo-wrapper-knight{
-                background: #faf7f7; // variable
-                .logo-img{
-                    background: #3ebafd; // variable
-                    border-radius: $border-radius;
-                }
-                img{
-                    filter:  brightness(0) invert(1); // variable
-                }
-            }
-            .logo-wrapper-pubg{
-                background: #faf7f7; // variable
-                &:hover{
-                    background: #93C03D;
-                }
-                .logo-img{
-                    background: #93C03D; // variable
-                    border-radius: $border-radius;
-                }
-                img{
-                    filter:  brightness(0) invert(1); // variable
-                }
-            }
-            .logo-wrapper-valorant{
-                background: #faf7f7; // variable
-                &:hover{
-                    background: #00537A;
-                }
-                .logo-img{
-                    background: #00537A; // variable
-                    border-radius: $border-radius;
-                }
-                img{
-                    filter:  brightness(0) invert(1); // variable
-                }
-            }
-            .logo-wrapper-league{
-                background: #faf7f7; // variable
-                &:hover{
-                    background: #1503EA;
-                }
-                .logo-img{
-                    background: #1503EA; // variable
-                    border-radius: $border-radius;
-                }
-                img{
-                    filter:  brightness(0) invert(1); // variable
-                }
-            }
-            .logo-wrapper-cs{
-                background: #faf7f7; // variable
-                &:hover{
-                    background: #FD3E77;
-                }
-                .logo-img{
-                    background: #FD3E77; // variable
-                    border-radius: $border-radius;
-                }
-                img{
-                    filter:  brightness(0) invert(1); // variable
-                }
-            }
-            .logo-wrapper-metin{
-                background: #faf7f7; // variable
-                &:hover{
-                    background: #FD6A00;
-                }
-                .logo-img{
-                    background: #FD6A00; // variable
-                    border-radius: $border-radius;
-                }
-                img{
-                    filter:  brightness(0) invert(1); // variable
-                }
-            }
-            .logo-wrapper-black{
-                background: #faf7f7; // variable
-                &:hover{
-                    background: #3AC20B;
-                }
-                .logo-img{
-                    background: #3AC20B; // variable
-                    border-radius: $border-radius;
-                }
-                img{
-                    filter:  brightness(0) invert(1); // variable
-                }
-            }
-            .logo-wrapper-other{
-                background: #faf7f7; // variable
-                &:hover{
-                    background: #9D3EFD;
-                }
-                .logo-img{
-                    background: #9D3EFD; // variable
-                    border-radius: $border-radius;
-                }
-                img{
-                    filter:  brightness(0) invert(1); // variable
-                }
-            }
-          }
+        @extend %hovered-logos;
         .pages-index{
         text-align: start;
         display: flex;
@@ -177,113 +36,10 @@
         }
         // main-row
         .main-row{
-            .input-area{
-                width: 100% !important;
-                input{
-                   width: 85%;
-                   padding: .5rem 0;
-                   outline: none;
-                   box-shadow: none;
-                   border: none;
-                   box-shadow: 0px 0px 10px 1px rgba(172,150,150,0.30);
-                   background: #F3F3F3;
-                   border-radius: $border-radius;
-                }
-                button{
-                    width: 13%;
-                    background: #343A40;
-                    color: #fff;
-                    border-radius: $border-radius;
-                    font-size: 1.2rem;
-                }
-            }
-            .side-part{
-                box-shadow: 0px 0px 10px 1px rgba(172,150,150,0.30);
-                border-radius: $border-radius;
-                margin: 1rem 0;
-                background: #f3f3f3;
-                .tag-name{
-                    background: #343A40;
-                    color: #fff;
-                    padding: .5rem;
-                    border-radius: $border-radius;
-                }
-                // side-show
-                .side-show{
-                    position: relative;
-                    overflow: hidden;
-                   .overlay{
-                    background: #000;
-                    border-radius: $border-radius;
-                    img{
-                        object-fit: cover;
-                        object-position: center;
-                        max-width: 100%;
-                        min-width: 100%;
-                        max-height: 100px;
-                        min-height: 100px;
-                        opacity: .3;
-                    }
-                   }
-                    p{
-                        position: absolute;
-                        top: 30%;
-                        right: 35%;
-                        text-align: start;
-                        color: #fff;
-                    }
-                }
-                // side-logos
-                a{
-                    text-decoration: none;
-                }
-                .side-logos{
-                    color: #fff;
-                    border-radius: $border-radius;
-                    font-size: 12px;
-                    img{
-                        object-position: center;
-                        object-fit: contain;
-                        max-width: 40px;
-                        min-width: 40px;
-                        max-height: 35px;
-                        min-height: 35px;
-                        filter:  brightness(0) invert(1);
-                    }
-                    p{
-                        margin: .48rem 0 0 0;
-                        span{
-                            background: rgba(0, 0, 0, 0.35);
-                            border-radius: $border-radius;
-                            padding: .35rem .6rem;
-                        }
-                    }
-                }
-                .logo-1{
-                    background: #3ebafd;
-                }
-                .logo-2{
-                    background: #93C03D;
-                }
-                .logo-3{
-                    background: #00537A;
-                }
-                .logo-4{
-                    background: #1503EA;
-                }
-                .logo-5{
-                    background: #FD3E77;
-                }
-                .logo-6{
-                    background: #FD6A00;
-                }
-                .logo-7{
-                    background: #3AC20B;
-                }
-                .logo-8{
-                    background: #9D3EFD;
-                }
-            }
+            @extend %input-area;
+            // side
+            @extend %side-part;
+            // main
             .main-col{
                 box-shadow: 0px 0px 10px 1px rgba(172,150,150,0.30);
                 border-radius: $border-radius;
@@ -336,7 +92,7 @@
                     .bg-part{
                         text-align: center;
                         @media (min-width: 991px) and (max-width: 3001px) {
-                            margin-top: -6rem;
+                            margin-top: -7rem;
                         }
                         img{
                             border-radius: $border-radius;

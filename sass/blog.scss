@@ -1,0 +1,161 @@
+// import styles
+@import 'base';
+@import 'hamburger';
+@import 'nav-footer-style';
+@import 'logo-side';
+// header
+
+//  blog-show
+.blog-show{ 
+    background: url('../img/blog_bg.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    .container{ 
+        // hovered-logos
+        @extend %hovered-logos;
+        .pages-index{
+        text-align: start;
+        display: flex;
+        justify-content: space-around;
+        a{
+            color: #000;
+            background: #dee2e6;
+            text-decoration: none;
+            text-align: right;
+            border-radius: $border-radius;
+            padding: .1rem .4rem;
+        }
+        // pages-index
+        .page-index{
+            background: $main-color;
+            padding: .1rem .6rem;
+            color: #fff;
+            border-radius: $border-radius;
+        }
+        }
+        // main-row
+        .main-row{
+            background: none;
+            box-shadow: none;
+            @extend %input-area;
+            // side
+            @extend %side-part;
+            // main header
+            .main-header{
+                .big-img{
+                    position: relative;
+                    img{
+                        border-radius: $border-radius;
+                        object-position: center;
+                        object-fit: cover;
+                        min-width: 100%;
+                        max-width: 100%;
+                        min-height: 250px;
+                        max-height: 250px;
+                    }
+                    .img-title{
+                        position: absolute;
+                        background: #FD3E77;
+                        border-radius: $border-radius;
+                        padding: 0 .5rem;
+                        color: #fff;
+                        top: 5px;
+                        right: 10px;
+                        font-size: 13px;
+                    }
+                    .img-desc{
+                        color: #fff;
+                        position: absolute;
+                        bottom: 10px;
+                        right: 10px;
+                        font-size: 18px;
+                        font-weight: bold;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                .small-img{
+                    position: relative;
+                    text-align: start;
+                    img{
+                        border-radius: $border-radius;
+                        object-position: center;
+                        object-fit: cover;
+                        min-width: 100%;
+                        max-width: 100%;
+                        min-height: 120px;
+                        max-height: 120px;
+                        
+                    }
+                    .img-title{
+                        background: #9D3EFD;
+                        border-radius: $border-radius;
+                        padding: 0 .5rem;
+                        color: #fff;
+                        position: absolute;
+                        top: 5px;
+                        right: 10px;
+                        font-size: 13px;
+                    }
+                    .img-desc{
+                        color: #fff;
+                        position: absolute;
+                        bottom: 10px;
+                        right: 10px;
+                        font-size: 18px;
+                        font-weight: bold;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+            .game-news{
+            box-shadow: 0px 0px 10px 1px rgba(172,150,150,0.30);
+            border-radius: $border-radius;
+                .img-holder{
+                    position: relative;
+                    img{
+                        object-fit: cover;
+                        object-position: center;
+                        min-width: 100%;
+                        max-width: 100%;
+                        min-height: 180px;
+                        max-height: 180px;
+                    }
+                    span{
+                        position: absolute;
+                        background: #FD6A00;
+                        border-radius: $border-radius;
+                        padding: 0 .5rem;
+                        color: #fff;
+                        top: 10px;
+                        right: 10px;
+                        font-size: 13px;
+                    }
+             
+                }
+                .info{
+                    a{
+                        color: #000;
+                        text-decoration: none;
+                        font-size: 18px;
+                        font-weight: bold;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                    p{
+                        font-size: 12px;
+                        a{
+                            font-size: 12px;
+                            font-weight: normal;
+                        }
+                    }
+                }
+            }   
+        }
+    }
+}
