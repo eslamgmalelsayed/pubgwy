@@ -3,7 +3,7 @@
     border-bottom: 1px solid $border-color;
     .container{
         p{
-            font-size: 14px;
+            font-size: 12px;
             color: $links-color;
             margin: 0;
         }
@@ -50,8 +50,16 @@
                 width: 27.5%;
             }
         }
+        .navbar-brand{
+            @media (min-width: 320px) and (max-width: 450px) {
+                width: 110px;
+            }
+        }
         .navbar-form{
             width: 45%;
+            @media (min-width: 991px) and (max-width: 1200px) {
+                width: 35%;
+            }
             @media (min-width: 320px) and (max-width: 991px) {
                 width: 80%;
                 margin: 1rem auto !important;
@@ -92,9 +100,67 @@
             }
         }
         ul{
+            .fa-envelope{
+                border-left: 1px solid $hr-color;
+                border-right: 1px solid $hr-color;
+                padding: .4rem .4rem;
+                font-size: 20px;
+            }
             li{
                 padding-right: .3rem;
                 background: #fff;
+            }
+            .user-menu{
+                position: relative;               
+                .nav-link{
+                    color: $main-color;
+                    font-size: 12px;
+                    margin: 0 .5rem;
+                    i{
+                        font-size: 20px;
+                        padding-left: .2rem;
+                    }
+                }
+                .dropdown-menu{
+                    border: none;
+                    box-shadow: 0px 5px 6px -1px rgba(172,150,150,0.30);
+                    font-size: 12px;
+                    position: absolute;
+                    top: 120%;
+                    right: -50% !important;
+                    li{
+                        background: none;
+                        .dropdown-item{
+                            border-bottom: 1px solid $hr-color;
+                            padding: .4rem;
+                            color: #000;
+                            &:hover{
+                                color: #016F9E;
+                                text-decoration: underline;
+                                background: none;
+                            }
+                            &:active{
+                                background: none;
+                            }
+                            i{
+                                font-size: 15px;
+                                padding-left: .3rem;
+                                color: #000;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+            .balance{
+                position: absolute;
+                content: '';
+                top: 33px;
+                color: #FD7E14;
+                font-size: 11px;
+                @media (min-width: 991px) and (max-width: 30001px) {
+                left: 95px;
+                }
             }
             .sell-link,.login-link{
                 width: 90px;
@@ -106,6 +172,9 @@
                 border-radius: $border-radius;
                 color: #fff !important;
                 text-align: center;
+            }
+            .sell-link{
+                margin-top: .3rem;
             }
             .login-link{
                 @media (min-width: 320px) and (max-width: 991px) {

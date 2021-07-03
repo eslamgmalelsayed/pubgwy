@@ -50,12 +50,32 @@
                     </div>
                 </form>
                   <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex text-center justify-content-end">
-                    <li class="nav-item d-none d-lg-block ">
+                    <li class="nav-item d-none d-lg-block  ">
                       <a class="nav-link sell-link" href="#">بيع</a>
                     </li>
-                    <li class="nav-item d-none d-md-block">
+                    <!-- case guest ///////////////////-->
+                    <!-- <li class="nav-item d-none d-md-block">
                         <a class="nav-link login-link" href="#">تسجيل الدخول</a>
+                    </li> -->
+                    <!-- end -->
+                    <!-- case user //////////////////-->
+                    <li class="nav-item dropdown user-menu">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="far fa-user"></i> حسابي 
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="#"><i class="far fa-list-alt"></i> طلباتي</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fas fa-gavel"></i> إعلاناتي</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="far fa-address-card"></i> معلوماتي</a></li>
+                      <li><a style="color: #dc3545;" class="dropdown-item border-0" href="#"><i style="color: #dc3545;" class="fas fa-door-open"></i> الخروج</a></li>
+                      </ul>
                     </li>
+                    <span class="balance">4594454564</span>
+                    <li class="nav-item d-none d-lg-block">
+                      <a href="#"><i class="far fa-envelope"></i></a>
+                    </li>
+                    <!-- end -->
+                    <!--  -->
                     <li class="nav-item d-lg-block d-none">
                         <a class="nav-link" href="#"><i style="font-size: 20px;" class="fas fa-dolly"></i></a>
                         <span class="order-count"></span>
