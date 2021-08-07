@@ -9,6 +9,15 @@
 // blog item
 .blog-item{
     background: $section-color;
+    iframe{
+        width: 50%;
+        min-height: 350px;
+        margin: auto;
+        @media (min-width: 320px) and (max-width: 991px) {
+        min-height: 180px;
+        width: 90%;
+        }
+    }
     .secondary-container{
       @extend %pages-index;
     }

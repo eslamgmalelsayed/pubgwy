@@ -728,6 +728,19 @@ footer .banks-logos p {
   background: #F3F3F3;
 }
 
+.blog-item iframe {
+  width: 50%;
+  min-height: 350px;
+  margin: auto;
+}
+
+@media (min-width: 320px) and (max-width: 991px) {
+  .blog-item iframe {
+    min-height: 180px;
+    width: 90%;
+  }
+}
+
 .blog-item .main-container .item-show {
   background: #fff;
   -webkit-box-shadow: 0px 5px 6px -1px rgba(172, 150, 150, 0.3);
