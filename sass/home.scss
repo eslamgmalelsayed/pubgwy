@@ -317,4 +317,6 @@ svg{
 .splide__arrow--next{
     background: transparent;
     left: -28px !important;
+    top: 28px;
+    transform: rotate(180deg);
 }
