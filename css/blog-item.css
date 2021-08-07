@@ -742,12 +742,13 @@ footer .banks-logos p {
   position: absolute;
   top: 5px;
   right: 5px;
-  background: #28a745;
+  background: #fd7e14;
   text-align: center;
   padding: .1rem .4rem;
   border-radius: 5px;
   color: #fff;
   font-size: 13px;
+  z-index: 99;
 }
 
 .blog-item .main-container .item-show .game-img .item-img img {
@@ -755,6 +756,22 @@ footer .banks-logos p {
   max-width: 100%;
   min-height: 180px;
   max-height: 180px;
+  position: relative;
+}
+
+.blog-item .main-container .item-show .game-img .item-img .carousel-indicators [data-bs-target] {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.blog-item .main-container .item-show .game-img .item-img .carousel-indicators .active {
+  background-color: #01A4EA !important;
+}
+
+.blog-item .main-container .item-show .game-img .item-img .carousel-item {
+  -webkit-transition: ease-out .5s;
+  transition: ease-out .5s;
 }
 
 .blog-item .main-container .item-show .game-img .item-desc p {

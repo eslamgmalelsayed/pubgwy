@@ -23,19 +23,33 @@
                         position: absolute;
                         top: 5px;
                         right: 5px;
-                        background: #28a745;
+                        background: #fd7e14;
                         text-align: center;
                         padding: .1rem .4rem;
                         border-radius: $border-radius;
                         color: #fff;
                         font-size: 13px;
+                        z-index: 99;
                     }
                     img{
                         min-width: 100%;
                         max-width: 100%;
                         min-height: 180px;
                         max-height: 180px;
+                        position: relative;
                     }
+                      // carousel
+                .carousel-indicators [data-bs-target]{
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+                }
+                .carousel-indicators .active{
+                    background-color: $main-color !important;
+                }
+                .carousel-item {
+                    transition: ease-out .5s;
+                }
                 }
                 .item-desc{
                     p{
